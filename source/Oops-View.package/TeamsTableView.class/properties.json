@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WAPresenter",
+	"category" : "Oops-View",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "TeamsTableView",
+	"type" : "normal"
+}

@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "WAPresenter",
+	"category" : "Oops-View",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"addTeamForm",
+		"failuresHandlingStrategy",
+		"nameField",
+		"membersField"
+	],
+	"name" : "AddTeamModalView",
+	"type" : "normal"
+}

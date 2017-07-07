@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Oops",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"user",
+		"workedSeconds",
+		"requiredSecondsRelativeToday"
+	],
+	"name" : "CurrentMonthWorkload",
+	"type" : "normal"
+}

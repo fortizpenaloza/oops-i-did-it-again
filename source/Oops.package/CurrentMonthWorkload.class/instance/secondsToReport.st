@@ -1,0 +1,4 @@
+accessing
+secondsToReport
+
+	^requiredSecondsRelativeToday - workedSeconds 

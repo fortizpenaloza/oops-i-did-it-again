@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Oops",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"name",
+		"fullName",
+		"avatarURL"
+	],
+	"name" : "JIRAUser",
+	"type" : "normal"
+}

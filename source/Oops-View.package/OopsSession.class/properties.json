@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "WillowSession",
+	"category" : "Oops-View",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"application",
+		"context"
+	],
+	"name" : "OopsSession",
+	"type" : "normal"
+}
