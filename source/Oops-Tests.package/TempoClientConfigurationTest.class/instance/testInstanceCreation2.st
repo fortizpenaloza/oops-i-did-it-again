@@ -18,7 +18,7 @@ testInstanceCreation2
 		for: CurrentMonthWorkload
 			customDo: [ :mapping | 
 			mapping
-				decoder: [ :raw | 
+				decoder: [ :raw |  
 					CurrentMonthWorkload
 						for: (self userFrom: (raw at: 'user'))
 						with: (raw at: 'requiredSecondsRelativeToday')

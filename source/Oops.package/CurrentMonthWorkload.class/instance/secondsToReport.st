@@ -1,4 +1,4 @@
 accessing
 secondsToReport
 
-	^requiredSecondsRelativeToday - workedSeconds 
+	^ requiredSecondsRelativeToday - workedSeconds
