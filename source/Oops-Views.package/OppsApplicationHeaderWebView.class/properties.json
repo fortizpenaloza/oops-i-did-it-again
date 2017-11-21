@@ -1,13 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "WillowApplication",
+	"super" : "WAPresenter",
 	"category" : "Oops-Views-Application",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"componentSupplier"
-	],
-	"name" : "OopsApplication",
+	"instvars" : [ ],
+	"name" : "OppsApplicationHeaderWebView",
 	"type" : "normal"
 }

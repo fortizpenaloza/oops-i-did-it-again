@@ -2,8 +2,19 @@ baselines
 setUpDependencies: spec
 
 	spec
-		baseline: 'Willow'
-			with: [ spec
-				repository: 'github://ba-st/Willow:master/source';
-				loads: #('Development') ];
-		import: 'Willow'
+		baseline: 'Buoy'
+		with: [ spec
+				repository: 'github://ba-st/Buoy:master/source';
+				loads: #('Deployment') ].
+
+	spec
+		baseline: 'Chalten'
+		with: [ spec
+				repository: 'github://ba-st/chalten:v6.0.0/repository';
+				loads: #('Core') ].
+
+	spec
+		configuration: 'Teapot'
+		with: [ spec
+				versionString: #stable;
+				repository: 'http://smalltalkhub.com/mc/zeroflag/Teapot/main/' ]
