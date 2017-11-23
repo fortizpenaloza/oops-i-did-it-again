@@ -6,7 +6,7 @@ setUpDependencies: spec
 		with: [ spec
 				repository: 'github://ba-st/Buoy:master/source';
 				loads: #('Deployment') ].
-
+			
 	spec
 		baseline: 'Chalten'
 		with: [ spec
