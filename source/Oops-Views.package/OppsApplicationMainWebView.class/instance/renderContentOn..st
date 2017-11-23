@@ -1,4 +1,4 @@
 rendering
 renderContentOn: aCanvas
 
-	aCanvas render: 'main'
+	aCanvas main: self session identifiedContentView

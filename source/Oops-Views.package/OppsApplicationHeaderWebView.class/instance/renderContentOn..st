@@ -1,6 +1,12 @@
 rendering
 renderContentOn: aCanvas
 
+	| slideOutMenu |
+
+	slideOutMenu := self slideOutMenu.
+
+	slideOutMenu identifyIn: aCanvas.
+
 	aCanvas
 		header: [ aCanvas
 				render:
@@ -12,16 +18,11 @@ renderContentOn: aCanvas
 										class: 'material-icons';
 										with: 'menu' ]
 								applying: [ :anchor | 
-									anchor addClass materialize buttonCollapse + anchor addClass materialize wavesEffect
-										+ anchor addClass materialize wavesLight + anchor addClass materialize circle
+									anchor addClass materialize buttonCollapse
+										+ anchor addClass materialize wavesEffect
+										+ anchor addClass materialize wavesLight
 										+ anchor addClass materialize hideOnLargeOnly
-										+ anchor addClass oops topNavigation
-										+ anchor addClass oops sideNavigationTrigger ])
-						applying: [ :container | container addClass materialize container ]).
-			aCanvas
-				render:
-					(self componentSupplier
-						unorderedListApplying:
-							[ :list | list addClass materialize sideNavigation + list addClass materialize fixedSideNavigation ]
-						listing: #('About' 'Ranking' 'Configuration' )
-						applyingToEach: [ :item |  ]) ]
+										+ anchor addClass materialize sideNavigationTrigger
+										+ (anchor setData: 'target' to: slideOutMenu identifier) ])
+						applying: [ :container | container addClass materialize container ]);
+				render: slideOutMenu ]

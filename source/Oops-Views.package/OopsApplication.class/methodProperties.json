@@ -1,14 +1,13 @@
 {
 	"instance" : {
-		"componentSupplier" : "fortizpenaloza 11/21/2017 10:23",
-		"contentView" : "fortizpenaloza 11/21/2017 14:01",
+		"componentSupplier" : "fortizpenaloza 11/23/2017 16:33",
+		"contentView" : "fortizpenaloza 11/23/2017 16:34",
 		"jQueryLibrary" : "fortizpenaloza 11/21/2017 10:22",
-		"initializeUsing:" : "fortizpenaloza 11/21/2017 10:24"
+		"updateRoot:" : "fortizpenaloza 11/22/2017 09:07"
 	},
 	"class" : {
 		"handlerName" : "fortizpenaloza 11/21/2017 10:23",
 		"applicationTitle" : "fortizpenaloza 11/21/2017 10:23",
-		"new" : "fortizpenaloza 11/21/2017 10:24",
-		"using:" : "fortizpenaloza 11/21/2017 10:24"
+		"sessionClass" : "fortizpenaloza 11/23/2017 16:04"
 	}
 }

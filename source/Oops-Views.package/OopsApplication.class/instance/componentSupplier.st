@@ -1,4 +1,4 @@
 Accessing
 componentSupplier
 
-	^ componentSupplier 
+	^ MaterializeComponentSupplier online 
