@@ -16,8 +16,8 @@ setUpDependencies: spec
 	spec
 		baseline: 'WillowMaterialize'
 		with: [ spec 
-			repository: 'github://fortizpenaloza/WillowMaterialize:master/source';
-			loads: #('Deployment')  ].
+			repository: 'github://fortizpenaloza/Willow-Materialize:master/source';
+			loads: #('Development')  ].
 
 	spec
 		configuration: 'Teapot'
