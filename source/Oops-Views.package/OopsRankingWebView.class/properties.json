@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "WAPresenter",
-	"category" : "Oops-Views-Application",
+	"category" : "Oops-Views-Ranking",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

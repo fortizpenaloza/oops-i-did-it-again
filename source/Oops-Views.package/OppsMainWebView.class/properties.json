@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WAPresenter",
+	"category" : "Oops-Views-Application",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "OppsMainWebView",
+	"type" : "normal"
+}

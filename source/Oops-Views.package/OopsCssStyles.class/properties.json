@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "Oops-Views",
+	"category" : "Oops-Views-Application",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

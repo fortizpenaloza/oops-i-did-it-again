@@ -1,14 +1,14 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "Oops",
+	"category" : "Oops-JIRATempo",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
 		"user",
-		"workedSeconds",
-		"requiredSecondsRelativeToday"
+		"secondsElapsedUntilToday",
+		"registeredWorkSeconds"
 	],
 	"name" : "CurrentMonthWorkload",
 	"type" : "normal"

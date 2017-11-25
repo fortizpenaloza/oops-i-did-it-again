@@ -27,7 +27,7 @@ testInstanceCreation3
 	workload := reader value: response. 
 	workloads add: workload].
 
-	workloads asSortedCollection: [ :a :b | a secondsToReport > b secondsToReport  ].
+	workloads asSortedCollection: [ :a :b | a unregisteredWorkHours > b unregisteredWorkHours  ].
 	
 	self halt.
 	

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WillowApplication",
+	"category" : "Oops-Views-Application",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "OopsWillowApplication",
+	"type" : "normal"
+}

@@ -1,6 +1,6 @@
-as yet unclassified
+initialize-release
 initializeFor: aUser with: secondsRelativeToToday of: secondsWorked
 
 	user := aUser.
-	requiredSecondsRelativeToday := secondsRelativeToToday .
-	workedSeconds := secondsWorked 
+	secondsElapsedUntilToday := secondsRelativeToToday .
+	registeredWorkSeconds := secondsWorked 

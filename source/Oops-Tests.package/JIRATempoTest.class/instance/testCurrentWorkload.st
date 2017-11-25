@@ -7,11 +7,11 @@ testCurrentWorkload
 		username: 'jiratv'
 		password: 'MP457susana84moria'.
 	tempo := JIRATempo configuredBy: configuration.
-	fran := User
+	fran := Player
 		named: 'Francisco Ortiz Peñaloza'
 		knownOnJIRAAs: 'fortiz'
 		andOnSlackAs: 'f.ortiz'.
 
 	workload := tempo currentMonthWorkloadFor: fran.
 
-	self assert: workload secondsToReport equals: 19200
+	self assert: workload unregisteredWorkHours equals: (TimeUnits second with: 48000)

@@ -1,4 +1,0 @@
-accessing
-teams
-
-	 ^ teams copy

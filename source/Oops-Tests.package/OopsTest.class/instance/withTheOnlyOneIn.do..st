@@ -1,4 +1,4 @@
-as yet unclassified
+support
 withTheOnlyOneIn: aCollection do: aBlockClosure 
 	
 	self assert: aCollection size equals: 1.

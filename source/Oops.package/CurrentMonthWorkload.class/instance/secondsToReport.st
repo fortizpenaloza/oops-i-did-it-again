@@ -1,4 +1,0 @@
-accessing
-secondsToReport
-
-	^ requiredSecondsRelativeToday - workedSeconds
