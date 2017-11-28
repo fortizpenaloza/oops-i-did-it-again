@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "WAPresenter",
+	"category" : "Oops-Views-Players",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"nameField",
+		"jiraUserField",
+		"slackUserField",
+		"confirmButton",
+		"form"
+	],
+	"name" : "PlayerRegistrationFormView",
+	"type" : "normal"
+}

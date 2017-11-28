@@ -9,9 +9,9 @@ testCurrentWorkload
 	tempo := JIRATempo configuredBy: configuration.
 	fran := Player
 		named: 'Francisco Ortiz Peñaloza'
-		knownOnJIRAAs: 'fortiz'
-		andOnSlackAs: 'f.ortiz'.
+		signingIntoJiraWith: 'fortiz'
+		andSlackWith: 'f.ortiz'.
 
 	workload := tempo currentMonthWorkloadFor: fran.
 
-	self assert: workload unregisteredWorkHours equals: (TimeUnits second with: 48000)
+	self assert: workload unregisteredWorkHours equals: (TimeUnits second with: 76800)

@@ -1,13 +1,11 @@
 {
 	"commentStamp" : "",
 	"super" : "WAPresenter",
-	"category" : "Oops-Views-Application",
+	"category" : "Oops-Views-Players",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"session"
-	],
-	"name" : "OppsHeaderWebView",
+	"instvars" : [ ],
+	"name" : "OopsPlayersWebView",
 	"type" : "normal"
 }

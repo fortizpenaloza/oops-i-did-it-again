@@ -1,4 +1,4 @@
 rendering
 renderContentOn: aCanvas
 
-	aCanvas render: self headerView
+	aCanvas render: form

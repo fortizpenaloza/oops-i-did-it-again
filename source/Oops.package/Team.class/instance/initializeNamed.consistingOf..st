@@ -1,4 +1,4 @@
-initialize-release
+initialization
 initializeNamed: aName consistingOf: aSetOfMembers
 
 	name := aName.

@@ -1,13 +1,14 @@
 {
 	"commentStamp" : "",
-	"super" : "WAPresenter",
-	"category" : "Oops-Views-Application",
+	"super" : "Object",
+	"category" : "Oops",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"session"
+		"workload",
+		"points"
 	],
-	"name" : "OppsHeaderWebView",
+	"name" : "RankingEntry",
 	"type" : "normal"
 }

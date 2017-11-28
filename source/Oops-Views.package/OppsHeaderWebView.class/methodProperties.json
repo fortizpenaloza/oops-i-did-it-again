@@ -1,7 +1,11 @@
 {
 	"instance" : {
-		"slideOutMenu" : "fortizpenaloza 11/24/2017 11:13",
-		"renderContentOn:" : "fortizpenaloza 11/24/2017 13:44"
+		"slideOutMenu" : "fortizpenaloza 11/26/2017 08:20",
+		"initialize" : "fortizpenaloza 11/26/2017 08:17",
+		"playersAnchor" : "fortizpenaloza 11/26/2017 08:21",
+		"renderContentOn:" : "fortizpenaloza 11/24/2017 13:44",
+		"rankingAnchor" : "fortizpenaloza 11/26/2017 08:19",
+		"robotAnchor" : "fortizpenaloza 11/26/2017 08:21"
 	},
 	"class" : { }
 }
