@@ -1,9 +1,12 @@
 {
 	"instance" : {
+		"printOn:" : "fortizpenaloza 12/7/2017 00:04",
+		"=" : "fortizpenaloza 12/7/2017 00:05",
+		"hash" : "fortizpenaloza 12/7/2017 00:04",
+		"initializeNamed:signingIntoJiraWith:andSlackWith:" : "fortizpenaloza 11/27/2017 18:26",
 		"name" : "fortizpenaloza 11/24/2017 13:32",
-		"jiraUser" : "fortizpenaloza 11/24/2017 13:48",
 		"slackUser" : "fortizpenaloza 11/24/2017 13:48",
-		"initializeNamed:signingIntoJiraWith:andSlackWith:" : "fortizpenaloza 11/27/2017 18:26"
+		"jiraUser" : "fortizpenaloza 11/24/2017 13:48"
 	},
 	"class" : {
 		"assertContainsLettersOrSpaces:" : "fortizpenaloza 11/27/2017 18:53",

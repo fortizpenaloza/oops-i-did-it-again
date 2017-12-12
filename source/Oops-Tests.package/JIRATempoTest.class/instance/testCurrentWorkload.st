@@ -14,4 +14,4 @@ testCurrentWorkload
 
 	workload := tempo currentMonthWorkloadFor: fran.
 
-	self assert: workload unregisteredWorkHours equals: (TimeUnits second with: 76800)
+	self assert: workload unregisteredWorkHours equals: (TimeUnits hour with: 32)

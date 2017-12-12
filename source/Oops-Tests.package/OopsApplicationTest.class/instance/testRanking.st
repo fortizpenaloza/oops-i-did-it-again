@@ -18,11 +18,10 @@ testRanking
 				signingIntoJiraWith: 'gcotelli'
 				andSlackWith: 'g.cotelli'.
 			
-	oops updateRanking.
-	
-	"player rankings... rank"
+	oops playRound.
 				
 	self assert: oops playersRankings size equals: 3;
-		assert: oops playersRankings first points equals: 3;
-		assert: oops playersRankings second  points equals: 2;
-		assert: oops playersRankings third points equals: 1
+		assert: oops playersRankings first score equals: 3;
+		assert: oops playersRankings first player name equals: 'Francisco Ortiz Peñaloza';
+		assert: oops playersRankings second  score equals: 2;
+		assert: oops playersRankings third score equals: 0

@@ -1,7 +1,7 @@
 accessing
 addButtonView
 
-	| addButton addPlayerFormView |
+	| addButton |
 
 	addButton := self componentSupplier
 		asynchronicAnchorLabeled: [ :canvas | 
@@ -14,14 +14,7 @@ addButtonView
 				+ anchor addClass materialize buttonLarge
 				+ anchor addClass materialize buttonFloating
 				+ anchor addClass materialize right ].
-			
-	addPlayerFormView := PlayerRegistrationFormView new.
 
-	addButton onTrigger
-		open:
-			(self componentSupplier dialogBuilder
-				wrapping: addPlayerFormView;
-				addFooterButton: addPlayerFormView confirmButton;
-				build).
+	addButton onTrigger open: self playerRegistrationModal.
 
 	^ addButton

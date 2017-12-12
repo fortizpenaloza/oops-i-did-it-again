@@ -1,0 +1,4 @@
+rankings
+playersRankingsWhenEnded
+	
+	^ self playersRankingsWhenRunning 

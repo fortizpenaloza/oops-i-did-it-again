@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "GameState",
+	"category" : "Oops-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GameNotStarted",
+	"type" : "normal"
+}

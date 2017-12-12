@@ -1,0 +1,18 @@
+{
+	"instance" : {
+		"francisco" : "fortizpenaloza 12/7/2017 00:04",
+		"secondRoundWorkloads" : "fortizpenaloza 12/7/2017 00:05",
+		"testInstanceCreation" : "fortizpenaloza 12/12/2017 00:26",
+		"firstRoundWorkloads" : "fortizpenaloza 12/7/2017 00:05",
+		"nicolas" : "fortizpenaloza 12/7/2017 00:05",
+		"maximiliano" : "fortizpenaloza 12/7/2017 00:04",
+		"thirdRoundWorkloads" : "fortizpenaloza 12/7/2017 00:05",
+		"julian" : "fortizpenaloza 12/7/2017 00:04",
+		"withElementsIn:do:" : "fortizpenaloza 12/7/2017 00:04",
+		"players" : "fortizpenaloza 12/7/2017 00:05",
+		"testPlayRound" : "fortizpenaloza 12/12/2017 00:26",
+		"testTryingToPlayWhenEndedFails" : "fortizpenaloza 12/12/2017 00:27",
+		"gabriel" : "fortizpenaloza 12/7/2017 00:04"
+	},
+	"class" : { }
+}

@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Oops-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"round",
+		"workloads",
+		"score",
+		"playersScores"
+	],
+	"name" : "RoundScoreBuilder",
+	"type" : "normal"
+}

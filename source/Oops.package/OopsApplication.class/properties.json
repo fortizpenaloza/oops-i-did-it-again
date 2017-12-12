@@ -8,7 +8,9 @@
 	"instvars" : [
 		"teams",
 		"players",
-		"playersRanking"
+		"scores",
+		"currentGame",
+		"round"
 	],
 	"name" : "OopsApplication",
 	"type" : "normal"

@@ -4,8 +4,9 @@ renderContentOn: aCanvas
 	| table |
 
 	table := self componentSupplier tableBuilder
-		addColumnTitled: 'Number' rendering: [ :number | number ];
-		addColumnTitled: 'Even?' rendering: [ :number | number even ];
+		addColumnTitled: 'Puesto' rendering: [ :number | number ];
+		addColumnTitled: 'Jugador' rendering: [ :number | number even ];
+		addColumnTitled: 'Puntos' rendering: [ :number | number ];
 		build.
 
 	table changeContentsTo: #(1 2 3).

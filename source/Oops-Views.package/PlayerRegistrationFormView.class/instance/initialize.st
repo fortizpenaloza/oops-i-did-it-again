@@ -8,6 +8,4 @@ initialize
 	slackUserField := self componentSupplier
 		singleLineTextFieldApplying: [ :textField |  ].
 
-	self
-		initializeForm;
-		initializeConfirmButton
+	self initializeForm

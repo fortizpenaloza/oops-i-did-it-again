@@ -3,4 +3,8 @@ initialize
 
 	teams := Set new.
 	players := Set new.
-	playersRanking := OrderedCollection new
+	
+	currentGame := Game involving: players during: 3.
+
+	
+	

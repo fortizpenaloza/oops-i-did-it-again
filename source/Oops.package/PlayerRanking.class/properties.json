@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Oops-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"player",
+		"rank",
+		"score"
+	],
+	"name" : "PlayerRanking",
+	"type" : "normal"
+}
