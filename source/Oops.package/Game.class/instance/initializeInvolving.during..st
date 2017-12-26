@@ -2,7 +2,7 @@ initialization
 initializeInvolving: aPlayersCollection during: aNumberOfRounds
 	
 	players := aPlayersCollection.
-	rounds := aNumberOfRounds.
+	totalRounds := aNumberOfRounds.
 	
 	roundScores := OrderedCollection new.
 	state := GameNotStarted new

@@ -1,4 +1,4 @@
 instance creation
-of: aRound withAll: aCollectionOfPlayerScore
+of: aRound withAll: aCollectionOfPlayersScores
 	
-	^ self new initializeOf: aRound withAll: aCollectionOfPlayerScore
+	^ self new initializeOf: aRound withAll: aCollectionOfPlayersScores

@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "GameState",
+	"category" : "Oops-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"round"
+	],
+	"name" : "GameOver",
+	"type" : "normal"
+}

@@ -7,7 +7,7 @@ testTryingToPlayWhenEndedFails
 
 	self
 		deny: game isRunning;
-		deny: game isEnded;
+		deny: game isOver;
 		should: [ game round ] raise: Error;
 		withElementsIn: game playersRankings
 			do: [ :playerRanking :order | 
@@ -15,20 +15,20 @@ testTryingToPlayWhenEndedFails
 				assert: playerRanking rank equals: order;
 				assert: playerRanking score equals: 0 ].
 
-	game proceedToNextRoundUpdatingPlayersRankingsAccordingTo: self secondRoundWorkloads.
+	game proceedToNextRoundAccordingTo: self secondRoundWorkloads.
 
 	self
 		deny: game isRunning;
-		assert: game isEnded;
+		assert: game isOver;
 		assert: game round equals: 1;
 		assertCollection: game playersRankings asArray
 			equals:
 			{(PlayerRanking of: self nicolas ranked: 1 with: 3).
 			(PlayerRanking of: self julian ranked: 2 with: 2).
 			(PlayerRanking of: self maximiliano ranked: 3 with: 1).
-			(PlayerRanking of: self gabriel ranked: 4 with: 0).
-			(PlayerRanking of: self francisco ranked: 5 with: 0)}.
+			(PlayerRanking of: self francisco ranked: 4 with: 0).
+			(PlayerRanking of: self gabriel ranked: 5 with: 0)}.
 
 	self 
-		should: [ game proceedToNextRoundUpdatingPlayersRankingsAccordingTo: self thirdRoundWorkloads ]
+		should: [ game proceedToNextRoundAccordingTo: self thirdRoundWorkloads ]
 		raise: Error

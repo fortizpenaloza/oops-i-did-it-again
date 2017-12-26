@@ -1,11 +1,13 @@
 {
 	"commentStamp" : "",
 	"super" : "TestCase",
-	"category" : "Oops-Tests",
+	"category" : "Oops-Tests-JIRATempo",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"httpClient"
+	],
 	"name" : "JIRATempoTest",
 	"type" : "normal"
 }

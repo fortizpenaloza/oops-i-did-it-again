@@ -1,4 +1,4 @@
 instance creation
-for: aRound from: workloads
+for: aRound from: aWorkloadsCollection
 	
-	^ self new initializeFor: aRound from: workloads
+	^ self new initializeFor: aRound from: aWorkloadsCollection

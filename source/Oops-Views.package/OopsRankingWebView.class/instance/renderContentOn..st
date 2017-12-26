@@ -4,12 +4,12 @@ renderContentOn: aCanvas
 	| table |
 
 	table := self componentSupplier tableBuilder
-		addColumnTitled: 'Puesto' rendering: [ :number | number ];
-		addColumnTitled: 'Jugador' rendering: [ :number | number even ];
-		addColumnTitled: 'Puntos' rendering: [ :number | number ];
+		addColumnTitled: '#' rendering: [ :ranking | ranking rank ];
+		addColumnTitled: 'Jugador' rendering: [ :ranking | ranking player ];
+		addColumnTitled: 'Puntos' rendering: [ :ranking | ranking score ];
 		build.
 
-	table changeContentsTo: #(1 2 3).
+	table changeContentsTo: 	self session oops playersRankings.
 
 	aCanvas
 		render: self headerView;

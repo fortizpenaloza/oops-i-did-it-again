@@ -1,4 +1,0 @@
-round management
-proceedToNextRoundUpdatingPlayersRankingsAccordingTo: workloads
-
-	state proceedToNextRoundUpdatingPlayersRankingsOf: self accordingTo: workloads

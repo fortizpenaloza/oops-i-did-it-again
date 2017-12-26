@@ -1,4 +1,4 @@
 rankings
 playersRankingsWhenEnded
-	
-	^ self playersRankingsWhenRunning 
+
+	^ (PlayersRankingsBuilder for: self players with: roundScores) built.

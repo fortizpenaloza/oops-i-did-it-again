@@ -1,4 +1,4 @@
 instance creation
 username: aUsername password: aPassword
 
-	^ self new initializeUsername: aUsername password: aPassword
+	^ self username: aUsername password: aPassword using: ZnClient new

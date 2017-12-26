@@ -4,9 +4,11 @@ headerView
 	^ GenericContainerWebView
 		wrapping:
 			(GenericContainerWebView
-				wrapping: [ :canvas | 
-					canvas heading
-						class: 'header red-text text-lighten-2';
-						with: 'Jugadores' ]
+				wrapping:
+					(HeadingWebView
+						displaying: 'Jugadores'
+						withLevel: 1
+						applying:
+							[ :heading | heading addClass materialize redText + (heading addClass materialize textLightenBy: 2) ])
 				applying: [ :container | container addClass materialize column ])
 		applying: [ :container | container addClass materialize row ]

@@ -1,4 +1,5 @@
 players
 addPlayer: aPlayer 
 	
-	players add: aPlayer
+	self saveAfter: [ players add: aPlayer ]
+	

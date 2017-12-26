@@ -1,5 +1,5 @@
 initialization
-initializeOf: aRound withAll: aCollectionOfPlayerScore
+initializeOf: aRound withAll: aCollectionOfPlayersScores
 	
 	round := aRound.
-	playersScores := aCollectionOfPlayerScore
+	playersScores := aCollectionOfPlayersScores

@@ -1,8 +1,0 @@
-{
-	"instance" : {
-		"testUnregisteredOnFirstDayOfMonth" : "fortizpenaloza 12/7/2017 00:03",
-		"francisco" : "fortizpenaloza 12/7/2017 00:05",
-		"testUnregisteredOnSecondDayOfMonthWithFirstDayWorkHoursRegistered" : "fortizpenaloza 12/7/2017 00:03"
-	},
-	"class" : { }
-}

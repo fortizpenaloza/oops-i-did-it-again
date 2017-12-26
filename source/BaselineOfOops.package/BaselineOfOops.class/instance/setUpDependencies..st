@@ -18,6 +18,12 @@ setUpDependencies: spec
 		with: [ spec 
 			repository: 'github://fortizpenaloza/Willow-Materialize:master/source';
 			loads: #('Development')  ].
+		
+	spec
+		baseline: 'TestHTTPClient'
+		with: [ spec
+			repository: 'github://fortizpenaloza/Test-HTTP-Client:master/source';
+			loads: #('Development') ].
 
 	spec
 		configuration: 'Teapot'

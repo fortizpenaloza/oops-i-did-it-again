@@ -1,7 +1,0 @@
-{
-	"instance" : {
-		"testInstanceCreationAndAccessing" : "fortizpenaloza 11/27/2017 18:27",
-		"testInstanceCreationFailsWhenNameIsNotValid" : "fortizpenaloza 12/11/2017 23:38"
-	},
-	"class" : { }
-}

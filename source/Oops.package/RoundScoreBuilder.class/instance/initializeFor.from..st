@@ -1,8 +1,5 @@
 initialization
-initializeFor: aRound from: aWorkloadsSet 
+initializeFor: aRound from: aWorkloadsCollection 
 	
 	round := aRound.
-	workloads := aWorkloadsSet.
-	
-	playersScores := OrderedCollection new.
-	score := 3
+	workloads := aWorkloadsCollection.

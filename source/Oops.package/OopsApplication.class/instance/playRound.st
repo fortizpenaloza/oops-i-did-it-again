@@ -1,14 +1,9 @@
-as yet unclassified
+round management
 playRound
 
-	| configuration tempo worklogs |
+	self saveAfter: [ 
+			currentGame proceedToNextRoundAccordingTo: self workloads.
 
-	configuration := JIRATempoConfiguration
-		username: 'jiratv'
-		password: 'MP457susana84moria'.
-	tempo := JIRATempo configuredBy: configuration.
-
-	worklogs := players
-		collect: [ :player | tempo currentMonthWorkloadFor: player ].
-
-	currentGame proceedToNextRoundUpdatingPlayersRankingsAccordingTo: worklogs
+			currentGame isOver
+				ifTrue: [ lastGame := Binding to: currentGame.
+					currentGame := Game involving: self players during: 8 ] ]

@@ -1,4 +1,0 @@
-round management
-proceedToNextRoundUpdatingPlayersRankingsOf: aGame accordingTo: workloads 
-
-	aGame proceedToNextRoundWhenNotStatedUpdatingPlayersRankingsAccordingTo: workloads

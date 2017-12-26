@@ -1,4 +1,4 @@
 rankings
 playersRankings
 
-	^ currentGame playersRankings
+	^ currentGame playersRankings 
