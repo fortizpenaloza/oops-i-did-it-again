@@ -1,5 +1,5 @@
-tests
-franWorkloadJSON
+accessing workloads
+franciscoWorkloadJSON
 
 	^ '{
   "user": {

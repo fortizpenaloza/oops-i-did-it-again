@@ -2,5 +2,5 @@ private - serialization
 saveAfter: aBlock 
 
 	aBlock value.
-	FLSerializer serialize: self toFileNamed: 'oops.fuel'. 
+	FLSerializer serialize: self toFileNamed: fileName. 
 	

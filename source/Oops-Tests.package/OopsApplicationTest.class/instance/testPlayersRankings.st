@@ -1,51 +1,45 @@
 tests
 testPlayersRankings
 
-	| oops jiraTempo |
+	| oops |
 
-	jiraTempo := JIRATempo
-		configuredBy: (JIRATempoConfiguration username: 'jiratv' password: 'MP457susana84moria').
+	oops := OopsApplication
+		savingItselfToFileNamed: 'oops.fuel'
+		gettingWorkloadsUsing: self jiraTempoConfiguration.
 
-	Tempo
-		value: jiraTempo
-		during: [ oops := OopsApplication new.
+	self should: [ oops previousGamePlayersRankings isEmpty ] raise: AssertionFailed.
+	self assert: oops playersRankings isEmpty.
 
-			self should: [ oops previousGamePlayersRankings isEmpty ] raise: AssertionFailed.
-			self assert: oops playersRankings isEmpty.
+	oops addPlayer: self francisco.
+	oops addPlayer: self maximiliano.
+	oops addPlayer: self gabriel.
 
-			oops
-				addPlayer:
-					(Player
-						named: 'Francisco Ortiz Peñaloza'
-						signingIntoJiraWith: 'fortiz'
-						andSlackWith: 'f.ortiz').
+	httpClient
+		addExpectedResponse: (ZnResponse ok: (ZnEntity json: self franciscoWorkloadJSON)).
+	httpClient
+		addExpectedResponse: (ZnResponse ok: (ZnEntity json: self maximilianoWorkloadJSON)).
+	httpClient
+		addExpectedResponse: (ZnResponse ok: (ZnEntity json: self gabrielWorkloadJSON)).
+		
+	oops playRound.
 
-			oops
-				addPlayer:
-					(Player
-						named: 'Maximiliano Tabacman'
-						signingIntoJiraWith: 'mtabacman'
-						andSlackWith: 'm.tabacman').
+	self
+		assert: oops previousGamePlayersRankings isEmpty;
+		assert: oops playersRankings isEmpty.
 
-			oops
-				addPlayer:
-					(Player
-						named: 'Gabriel Cotelli'
-						signingIntoJiraWith: 'gcotelli'
-						andSlackWith: 'g.cotelli').
+	httpClient
+		addExpectedResponse: (ZnResponse ok: (ZnEntity json: self franciscoWorkloadJSON)).
+	httpClient
+		addExpectedResponse: (ZnResponse ok: (ZnEntity json: self maximilianoWorkloadJSON)).
+	httpClient
+		addExpectedResponse: (ZnResponse ok: (ZnEntity json: self gabrielWorkloadJSON)).
 
-			oops playRound.
+	oops playRound.
 
-			self
-				assert: oops previousGamePlayersRankings isEmpty;
-				assert: oops playersRankings isEmpty.
-
-			oops playRound.
-
-			self
-				assert: oops playersRankings size equals: 3;
-				assertCollection: oops playersRankings asArray
-					equals:
-					{(PlayerRanking of: self francisco ranked: 1 with: 3).
-					(PlayerRanking of: self maximiliano ranked: 2 with: 0).
-					(PlayerRanking of: self gabriel ranked: 3 with: 0)} ]
+	self
+		assert: oops playersRankings size equals: 3;
+		assertCollection: oops playersRankings asArray
+			equals:
+			{(PlayerRanking of: self maximiliano  ranked: 1 with: 3).
+			(PlayerRanking of: self francisco ranked: 2 with: 2).
+			(PlayerRanking of: self gabriel ranked: 3 with: 2)}

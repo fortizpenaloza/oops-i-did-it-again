@@ -4,11 +4,11 @@ addScoreForPlayersWithUnregisteredHoursTo: playersScores
 	| score |
 	score := 3.
 
-	self workloadsGroupedByUnregisteredHoursInDescendingOrder
-		do: [ :groupedWorkloads | 
+	self workloadsOrderedByUnregisteredHoursInDescendingOrder
+		do: [ :workloads | 
 
 			playersScores
-				addAll: (groupedWorkloads 
+				addAll: (workloads 
 					collect: [ :workload | PlayerScore of: workload user with: score ]).
 
 			score = 0

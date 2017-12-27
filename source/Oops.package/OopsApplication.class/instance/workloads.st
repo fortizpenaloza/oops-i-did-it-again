@@ -1,4 +1,5 @@
 jira tempo
 workloads
 
-	^ players collect: [ :player | Tempo value currentMonthWorkloadOf: player ]
+	^ players
+		collect: [ :player | self jiraTempo currentMonthWorkloadOf: player ]

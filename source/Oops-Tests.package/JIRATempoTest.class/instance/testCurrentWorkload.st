@@ -1,22 +1,21 @@
 tests
 testCurrentWorkload
 
-	| configuration tempo fran workload |
+	| configuration tempo francisco workload |
 
 	configuration := JIRATempoConfiguration
-		username: 'jiratv'
-		password: 'MP457susana84moria'
+		username: 'username'
+		password: 'password'
 		using: httpClient.
 
 	tempo := JIRATempo configuredBy: configuration.
 
-	fran := Player
-		named: 'Francisco Ortiz Peñaloza'
-		signingIntoJiraWith: 'fortiz'
-		andSlackWith: 'f.ortiz'.
+	francisco := self francisco.
 
 	httpClient
-		addExpectedResponse: (ZnResponse ok: (ZnEntity json: self franWorkloadJSON)).
-	workload := tempo currentMonthWorkloadOf: fran.
+		addExpectedResponse: (ZnResponse ok: (ZnEntity json: self franciscoWorkloadJSON)).
+	workload := tempo currentMonthWorkloadOf: francisco.
 
-	self assert: workload unregisteredWorkHours equals: (TimeUnits hour with: 20)
+	self
+		assert: workload unregisteredWorkHours
+		equals: (TimeUnits hour with: 20)

@@ -1,0 +1,4 @@
+installation
+serializationFileName
+
+	^ 'oops.fuel'
