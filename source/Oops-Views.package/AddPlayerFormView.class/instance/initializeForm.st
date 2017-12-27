@@ -2,7 +2,7 @@ initialize-release
 initializeForm
 
 	form := IdentifiedWebView
-		forFormNamed: 'player'
+		forFormNamed: 'add-player'
 		containing: [ :canvas | | grid |
 			
 			grid := self componentSupplier gridBuilder

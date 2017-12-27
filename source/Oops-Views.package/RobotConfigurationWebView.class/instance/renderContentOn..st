@@ -7,9 +7,9 @@ renderContentOn: aCanvas
 		forSmallDevices;
 		columnsPerRow: 1;
 		addContent: self headerView;
-		addContent: self tableView;
+		addContent: self playRoundButton;
 		build.
-
+		
 	aCanvas
 		render:
 			(GenericContainerWebView

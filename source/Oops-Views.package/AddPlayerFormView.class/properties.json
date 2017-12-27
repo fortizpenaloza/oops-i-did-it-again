@@ -12,6 +12,6 @@
 		"confirmButton",
 		"form"
 	],
-	"name" : "PlayerRegistrationFormView",
+	"name" : "AddPlayerFormView",
 	"type" : "normal"
 }

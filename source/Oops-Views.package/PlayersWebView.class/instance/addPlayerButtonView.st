@@ -1,9 +1,9 @@
 accessing
-addButtonView
+addPlayerButtonView
 
-	| addButton |
+	| addPlayerButtonView |
 
-	addButton := self componentSupplier
+	addPlayerButtonView := self componentSupplier
 		asynchronicAnchorLabeled: [ :canvas | 
 			canvas icon
 				class: 'material-icons';
@@ -15,6 +15,6 @@ addButtonView
 				+ anchor addClass materialize buttonFloating
 				+ anchor addClass materialize right ].
 
-	addButton onTrigger open: self playerRegistrationModal.
+	addPlayerButtonView onTrigger open: self addPlayerModalView.
 
-	^ addButton
+	^ addPlayerButtonView

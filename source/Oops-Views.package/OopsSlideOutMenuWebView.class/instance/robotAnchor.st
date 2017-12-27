@@ -8,7 +8,7 @@ robotAnchor
 		applying: [ :anchor | anchor addClass materialize wavesEffect ].
 
 	robotConfiguration onTrigger
-		evaluate: [ session setContentTo: OopsRobotConfigurationWebView new ];
+		evaluate: [ session setContentTo: RobotConfigurationWebView new ];
 		render: session identifiedContentView.
 
 	^ robotConfiguration

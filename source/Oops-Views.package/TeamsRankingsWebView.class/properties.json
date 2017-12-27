@@ -1,14 +1,11 @@
 {
 	"commentStamp" : "",
 	"super" : "WAPresenter",
-	"category" : "Oops-Views-Players",
+	"category" : "Oops-Views-Rankings",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"identifiedTableView",
-		"tableView"
-	],
-	"name" : "PlayersWebView",
+	"instvars" : [ ],
+	"name" : "TeamsRankingsWebView",
 	"type" : "normal"
 }

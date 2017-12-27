@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "OopsRobotConfigurationWebView",
+	"name" : "RobotConfigurationWebView",
 	"type" : "normal"
 }
