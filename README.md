@@ -1,7 +1,7 @@
 # oops-i-did-it-again
 JIRA Tempo integration with Slack.
 
-To contribute execute the following snippet and make a pull requests with changes
+To contribute execute the following snippet and make a pull request with your changes
 
 ``` smalltalk
 Metacello new
