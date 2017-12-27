@@ -8,6 +8,6 @@
 	"instvars" : [
 		"session"
 	],
-	"name" : "OppsHeaderWebView",
+	"name" : "OopsSlideOutMenuWebView",
 	"type" : "normal"
 }

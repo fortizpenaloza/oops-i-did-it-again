@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
 	"super" : "WAPresenter",
-	"category" : "Oops-Views-Ranking",
+	"category" : "Oops-Views-Rankings",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "OopsRankingWebView",
+	"name" : "PlayersRankingsWebView",
 	"type" : "normal"
 }

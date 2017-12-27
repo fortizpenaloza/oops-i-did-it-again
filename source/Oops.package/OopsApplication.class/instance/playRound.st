@@ -5,5 +5,5 @@ playRound
 			currentGame proceedToNextRoundAccordingTo: self workloads.
 
 			currentGame isOver
-				ifTrue: [ lastGame := Binding to: currentGame.
+				ifTrue: [ previousGame := Binding to: currentGame.
 					currentGame := Game involving: self players during: 8 ] ]

@@ -1,4 +1,4 @@
 rankings
 previousGamePlayersRankings
 
-	^ lastGame content playersRankings
+	^ previousGame content playersRankings

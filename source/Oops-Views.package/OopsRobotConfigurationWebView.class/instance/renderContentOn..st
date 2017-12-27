@@ -4,7 +4,7 @@ renderContentOn: aCanvas
 	| addButton |
 
 	addButton := self componentSupplier
-		asynchronicAnchorLabeled: 'Jugar una ronda'
+		asynchronicAnchorLabeled: 'Forzar una ronda'
 		applying: [ :anchor | 
 			anchor addClass materialize wavesEffect + anchor addClass materialize wavesLight
 				+ anchor addClass materialize button ].

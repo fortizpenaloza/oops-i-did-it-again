@@ -4,7 +4,7 @@ testAddTeam
 	| oops |
 
 	oops := OopsApplication
-		savingItselfToFileNamed: 'oops.fuel'
+		savingItselfToFileNamed: 'oops_test.fuel'
 		gettingWorkloadsUsing: self jiraTempoConfiguration.
 	self assert: oops teams isEmpty.
 	

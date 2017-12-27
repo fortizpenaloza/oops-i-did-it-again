@@ -16,5 +16,5 @@ install
 								gettingWorkloadsUsing: self jiraTempoConfiguration) ]).
 
 	application := OopsWillowApplication registerAsDevelopmentApplication.
-	"application filter configuration at: #exceptionHandler put: WADebugErrorHandler."
+	application filter configuration at: #exceptionHandler put: WADebugErrorHandler.
 	application

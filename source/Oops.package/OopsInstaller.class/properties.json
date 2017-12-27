@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "WAPresenter",
-	"category" : "Oops-Views-Application",
+	"super" : "Object",
+	"category" : "Oops",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "OppsMainWebView",
+	"name" : "OopsInstaller",
 	"type" : "normal"
 }

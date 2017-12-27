@@ -1,14 +1,14 @@
-accessing
-playersAnchor
+as yet unclassified
+jiraTempoConfigurationAnchor
 
 	| playersConfiguration |
 
 	playersConfiguration := self componentSupplier
-		asynchronicAnchorLabeled: 'Jugadores'
+		asynchronicAnchorLabeled: 'JIRA Tempo'
 		applying: [ :anchor | anchor addClass materialize wavesEffect ].
 		
 	playersConfiguration onTrigger
-		evaluate: [ session setContentTo: OopsPlayersWebView new ];
+		evaluate: [ session setContentTo: PlayersWebView new ];
 		render: session identifiedContentView.
 
 	^ playersConfiguration

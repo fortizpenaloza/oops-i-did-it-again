@@ -9,9 +9,9 @@
 		"teams",
 		"players",
 		"currentGame",
-		"lastGame",
 		"jiraTempoConfiguration",
-		"fileName"
+		"fileName",
+		"previousGame"
 	],
 	"name" : "OopsApplication",
 	"type" : "normal"

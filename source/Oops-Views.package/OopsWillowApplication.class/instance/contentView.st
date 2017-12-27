@@ -3,5 +3,5 @@ contentView
 
 	^ [ :canvas | 
 	canvas
-		render: OppsHeaderWebView new;
-		render: OppsMainWebView new ]
+		render: OopsSlideOutMenuWebView new;
+		render: self session identifiedContentView ]

@@ -1,14 +1,14 @@
 accessing
-rankingAnchor
+rankingsAnchor
 
-	| rankingAnchor |
+	| rankingsAnchor |
 
-	rankingAnchor := self componentSupplier
+	rankingsAnchor := self componentSupplier
 		asynchronicAnchorLabeled: [ :canvas | canvas render: 'Ranking' ]
 		applying: [ :anchor | anchor addClass materialize wavesEffect ].
 
-	rankingAnchor onTrigger
-		evaluate: [ session setContentTo: OopsRankingWebView new ];
+	rankingsAnchor onTrigger
+		evaluate: [ session setContentTo: PlayersRankingsWebView new ];
 		render: session identifiedContentView.
 		
-	^ rankingAnchor
+	^ rankingsAnchor

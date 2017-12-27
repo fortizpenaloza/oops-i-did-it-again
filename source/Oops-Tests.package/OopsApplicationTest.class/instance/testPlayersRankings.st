@@ -4,7 +4,7 @@ testPlayersRankings
 	| oops |
 
 	oops := OopsApplication
-		savingItselfToFileNamed: 'oops.fuel'
+		savingItselfToFileNamed: 'oops_test.fuel'
 		gettingWorkloadsUsing: self jiraTempoConfiguration.
 
 	self should: [ oops previousGamePlayersRankings isEmpty ] raise: AssertionFailed.
