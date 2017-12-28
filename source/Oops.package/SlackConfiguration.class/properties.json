@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Oops-Slack",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"webhook",
+		"httpClient"
+	],
+	"name" : "SlackConfiguration",
+	"type" : "normal"
+}

@@ -5,9 +5,9 @@ testAddTeam
 
 	oops := OopsApplication
 		savingItselfToFileNamed: 'oops_test.fuel'
-		gettingWorkloadsUsing: self jiraTempoConfiguration.
+		configuredBy: self oopsConfiguration.
 	self assert: oops teams isEmpty.
-	
+
 	oops addTeam: (Team named: 'Mercap Portfolio' consistingOf: #()).
 	self
 		withTheOnlyOneIn: oops teams

@@ -1,4 +1,4 @@
-rankings
+private - rankings
 playersRankingsWhenNotStated
 	
 	^ #()

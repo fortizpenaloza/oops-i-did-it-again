@@ -1,0 +1,4 @@
+accessing
+jiraTempoConfiguration
+
+	^ jiraTempoConfiguration

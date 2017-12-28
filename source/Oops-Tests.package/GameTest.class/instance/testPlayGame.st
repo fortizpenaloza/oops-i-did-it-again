@@ -1,5 +1,5 @@
 tests
-testPlayEntireGame
+testPlayGame
 
 	| game |
 
@@ -8,9 +8,10 @@ testPlayEntireGame
 	self
 		deny: game isRunning;
 		deny: game isOver;
-		should: [ game round ] raise: Error;
-		withElementsIn: game playersRankings
-			do: [ :playerRanking :order | 
+		should: [ game round ] raise: Error.
+	
+	
+	game playersRankings withIndexDo: [ :playerRanking :order | 
 			self
 				assert: playerRanking rank equals: order;
 				assert: playerRanking score equals: 0 ].
@@ -20,9 +21,9 @@ testPlayEntireGame
 	self
 		assert: game isRunning;
 		deny: game isOver;
-		assert: game round equals: 1;
-		withElementsIn: game playersRankings
-			do: [ :playerRanking :order | 
+		assert: game round equals: 1.
+
+	game playersRankings withIndexDo: [ :playerRanking :order | 
 			self
 				assert: playerRanking rank equals: order;
 				assert: playerRanking score equals: 0 ].

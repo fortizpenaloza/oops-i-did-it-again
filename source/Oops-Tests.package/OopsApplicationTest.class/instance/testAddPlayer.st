@@ -3,9 +3,9 @@ testAddPlayer
 
 	| oops |
 
-	oops := OopsApplication 
+	oops := OopsApplication
 		savingItselfToFileNamed: 'oops_test.fuel'
-		gettingWorkloadsUsing: self jiraTempoConfiguration.
+		configuredBy: self oopsConfiguration.
 	self assert: oops players isEmpty.
 
 	oops addPlayer: self francisco.

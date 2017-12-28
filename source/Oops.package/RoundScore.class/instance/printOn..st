@@ -1,6 +1,4 @@
 initialization
 printOn: aStream
 
-	aStream
-		nextPutAll: 'reescribir'"
-			('<1p> scored <2p> points on round <3p>' expandMacrosWith: player with: points with: round)"
+	aStream nextPutAll: ('Round <1p> with <2p>' expandMacrosWith: round with: playersScores)

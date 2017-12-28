@@ -1,4 +1,4 @@
-rankings
+current game
 playersRankings
 
 	^ currentGame playersRankings 

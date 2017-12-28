@@ -1,20 +1,11 @@
 tests
 testCurrentWorkload
 
-	| configuration tempo francisco workload |
-
-	configuration := JIRATempoConfiguration
-		username: 'username'
-		password: 'password'
-		using: httpClient.
-
-	tempo := JIRATempo configuredBy: configuration.
-
-	francisco := self francisco.
+	| workload |
 
 	httpClient
 		addExpectedResponse: (ZnResponse ok: (ZnEntity json: self franciscoWorkloadJSON)).
-	workload := tempo currentMonthWorkloadOf: francisco.
+	workload := jiraTempo currentMonthWorkloadOf: self francisco.
 
 	self
 		assert: workload unregisteredWorkHours

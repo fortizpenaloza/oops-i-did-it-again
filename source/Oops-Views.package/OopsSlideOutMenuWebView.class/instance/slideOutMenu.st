@@ -10,6 +10,5 @@ slideOutMenu
 		addSubheaderLabeled: 'Configuración';
 		addElement: self playersAnchor;
 		addElement: self teamsConfigurationAnchor;
-		addElement: self jiraTempoConfigurationAnchor;
 		addElement: self robotAnchor;
 		build

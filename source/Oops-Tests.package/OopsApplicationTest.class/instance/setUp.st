@@ -1,4 +1,5 @@
 tests
 setUp
 
-	httpClient := TestHTTPClient new.
+	tempoHTTPClient := TestHTTPClient new.
+	slackHTTPClient := TestHTTPClient new.

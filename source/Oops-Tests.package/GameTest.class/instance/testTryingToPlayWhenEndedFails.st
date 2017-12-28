@@ -8,9 +8,10 @@ testTryingToPlayWhenEndedFails
 	self
 		deny: game isRunning;
 		deny: game isOver;
-		should: [ game round ] raise: Error;
-		withElementsIn: game playersRankings
-			do: [ :playerRanking :order | 
+		should: [ game round ] raise: Error.
+
+	game playersRankings
+		withIndexDo: [ :playerRanking :order | 
 			self
 				assert: playerRanking rank equals: order;
 				assert: playerRanking score equals: 0 ].
@@ -29,6 +30,6 @@ testTryingToPlayWhenEndedFails
 			(PlayerRanking of: self francisco ranked: 4 with: 0).
 			(PlayerRanking of: self gabriel ranked: 5 with: 0)}.
 
-	self 
+	self
 		should: [ game proceedToNextRoundAccordingTo: self thirdRoundWorkloads ]
 		raise: Error

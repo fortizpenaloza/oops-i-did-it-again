@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"httpClient"
+		"httpClient",
+		"jiraTempo"
 	],
 	"name" : "JIRATempoTest",
 	"type" : "normal"

@@ -1,20 +1,17 @@
 rendering
 renderContentOn: aCanvas
 
-	| grid |
+	| gridView |
 
-	grid := self componentSupplier gridBuilder
+	gridView := self componentSupplier gridBuilder
 		forSmallDevices;
 		columnsPerRow: 1;
 		addContent: self headerView;
-		addContent: [ :canvas | 
-			canvas
-				render: self addPlayerButtonView;
-				render: self tableView ];
+		addContent: identifiedTableWithAddButtonView;
 		build.
 
 	aCanvas
 		render:
 			(GenericContainerWebView
-				wrapping: grid
+				wrapping: gridView
 				applying: [ :container | container addClass materialize container ])

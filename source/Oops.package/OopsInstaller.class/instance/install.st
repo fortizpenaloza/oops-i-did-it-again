@@ -13,7 +13,7 @@ install
 						return:
 							(OopsApplication
 								savingItselfToFileNamed: self serializationFileName
-								gettingWorkloadsUsing: self jiraTempoConfiguration) ]).
+								configuredBy: self oopsConfiguration) ]).
 
 	application := OopsWillowApplication registerAsDevelopmentApplication.
 	application filter configuration at: #exceptionHandler put: WADebugErrorHandler.

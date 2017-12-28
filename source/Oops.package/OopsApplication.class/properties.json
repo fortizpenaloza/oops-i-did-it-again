@@ -6,11 +6,11 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
+		"fileName",
+		"configuration",
 		"teams",
 		"players",
 		"currentGame",
-		"jiraTempoConfiguration",
-		"fileName",
 		"previousGame"
 	],
 	"name" : "OopsApplication",

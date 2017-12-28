@@ -1,26 +1,20 @@
 accessing
 addPlayerModalView
 
-	| addPlayerButtonView addPlayerFormView modalView |
+	| addPlayerFormView modalView |
 
 	addPlayerFormView := AddPlayerFormView new.
 
-	addPlayerButtonView := self componentSupplier
-		asynchronicAnchorLabeled: 'Agregar'
-		applying: [ :anchor | 
-			anchor addClass materialize button + anchor addClass materialize wavesEffect
-				+ anchor addClass materialize wavesLight + anchor addClass materialize modalAction
-				+ anchor addClass materialize modalClose ].
-
 	modalView := self componentSupplier dialogBuilder
 		wrapping: addPlayerFormView;
-		addFooterButton: addPlayerButtonView;
+		addFooterButton: self acceptButtonView;
 		build.
 
 	modalView onTrigger
 		serializeForm: addPlayerFormView;
-		evaluate: [ self session oops addPlayer: addPlayerFormView player.
-			tableView changeContentsTo: self session oops players ];
-		render: identifiedTableView.
+		evaluate: [ [ self session oops addPlayer: addPlayerFormView player ]
+				on: InstanceCreationFailed
+				do: [ :signal | signal ] ];
+		render: identifiedTableWithAddButtonView.
 
 	^ modalView

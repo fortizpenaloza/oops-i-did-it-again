@@ -1,4 +1,4 @@
-round management
+private - round management
 proceedToNextRoundWhenRunningAccordingTo: workloads
 
 	self registerRoundScoreAccordingTo: workloads.

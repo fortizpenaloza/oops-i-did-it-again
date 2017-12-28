@@ -1,8 +1,8 @@
 initialization
-initializeSavingItselfToFileNamed: aFileName gettingWorkloadsUsing: aJIRATempoConfiguration
+initializeSavingItselfToFileNamed: aFileName configuredBy: anOopsConfiguration
 
 	fileName := aFileName.
-	jiraTempoConfiguration := aJIRATempoConfiguration.
+	configuration := anOopsConfiguration.
 
 	teams := Set new.
 	players := Set new.

@@ -2,4 +2,4 @@ jira tempo
 jiraTempo
 
 	^ JIRATempo
-		configuredBy: jiraTempoConfiguration 
+		configuredBy: configuration jiraTempoConfiguration

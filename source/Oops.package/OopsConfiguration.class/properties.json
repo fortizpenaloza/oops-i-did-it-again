@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Oops",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"numberOfRounds",
+		"jiraTempoConfiguration",
+		"slackConfiguration"
+	],
+	"name" : "OopsConfiguration",
+	"type" : "normal"
+}

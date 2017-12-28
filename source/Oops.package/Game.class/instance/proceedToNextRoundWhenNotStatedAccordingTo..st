@@ -1,4 +1,4 @@
-round management
+private - round management
 proceedToNextRoundWhenNotStatedAccordingTo: workloads
 
 	state := GameRunning on: 1.

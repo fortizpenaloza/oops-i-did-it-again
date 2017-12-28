@@ -6,8 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"identifiedTableView",
-		"tableView"
+		"identifiedTableWithAddButtonView"
 	],
 	"name" : "PlayersWebView",
 	"type" : "normal"

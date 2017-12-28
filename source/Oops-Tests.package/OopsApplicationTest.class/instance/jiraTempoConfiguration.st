@@ -4,4 +4,4 @@ jiraTempoConfiguration
 	^ JIRATempoConfiguration
 		username: 'username'
 		password: 'password'
-		using: httpClient
+		using: tempoHTTPClient

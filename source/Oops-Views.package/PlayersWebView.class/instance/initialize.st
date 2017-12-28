@@ -1,4 +1,9 @@
 initialization
 initialize
 
-	self initializeTableView
+	identifiedTableWithAddButtonView := IdentifiedWebView
+		forDivNamed: 'players'
+		containing: [ :canvas | 
+			canvas
+				render: self addPlayerButtonView;
+				render: self tableView ]
