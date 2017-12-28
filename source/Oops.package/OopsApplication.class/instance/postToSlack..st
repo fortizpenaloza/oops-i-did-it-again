@@ -1,9 +1,14 @@
 slack
 postToSlack: aRoundScore
 
-	ZnClient new
+	| slackConfiguration |
+
+	slackConfiguration  := configuration slackConfiguration. 
+
+	slackConfiguration httpClient
 		beOneShot;
 		contents: (MessageBuilder from: aRoundScore) built;
 		contentType: ZnMimeType applicationJson;
-		url: configuration slackConfiguration webhook post;
+		url: slackConfiguration webhook;
+		post;
 		response
