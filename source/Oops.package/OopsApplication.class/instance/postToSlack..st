@@ -7,7 +7,7 @@ postToSlack: aRoundScore
 
 	slackConfiguration httpClient
 		beOneShot;
-		contents: (MessageBuilder from: aRoundScore) built;
+		contents: (SlackMessageBuilder from: aRoundScore) built;
 		contentType: ZnMimeType applicationJson;
 		url: slackConfiguration webhook;
 		post;

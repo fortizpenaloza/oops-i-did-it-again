@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Oops-Slack",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"roundScore"
+	],
+	"name" : "SlackMessageBuilder",
+	"type" : "normal"
+}

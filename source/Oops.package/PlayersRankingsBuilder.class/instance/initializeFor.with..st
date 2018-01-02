@@ -1,9 +1,12 @@
 initialization
 initializeFor: players with: roundScores
 
-	playersScores := OrderedCollection new.
+	playersScores := players
+		inject: OrderedCollection new
+		into: [ :collection :player | 
+			| totalScore |
 
-	players
-		do: [ :player | | totalScore |
 			totalScore := roundScores sumNumbers: [ :roundScore | roundScore scoreOf: player ].
-			playersScores add: (PlayerScore of: player with: totalScore) ]
+			collection
+				add: (PlayerScore of: player with: totalScore);
+				yourself ]

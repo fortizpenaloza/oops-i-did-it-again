@@ -3,7 +3,7 @@ testWithoutOnePoint
 
 	| builder |
 
-	builder := MessageBuilder
+	builder := SlackMessageBuilder
 		from:
 			(RoundScore
 				of: 1
@@ -19,12 +19,12 @@ testWithoutOnePoint
 		{
 			"fields" : [
 				{
-					"title" : "3...",
+					"title" : "3 puntos para",
 					"value" : "Maximiliano Tabacman (@m.tabacman)",
 					"short" : false
 				},
 				{
-					"title" : "2...",
+					"title" : "2 puntos para",
 					"value" : "Francisco Ortiz Peñaloza (@f.ortiz) y Gabriel Cotelli (@g.cotelli)",
 					"short" : false
 				}
