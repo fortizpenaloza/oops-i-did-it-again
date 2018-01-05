@@ -9,7 +9,7 @@ addScoreForPlayersWithUnregisteredHoursTo: playersScores
 
 			playersScores
 				addAll: (workloads 
-					collect: [ :workload | PlayerScore of: workload user with: score ]).
+					collect: [ :workload | PlayerScore of: workload user is: score ]).
 
 			score = 0
 				ifFalse: [ score := score - 1 ] ]

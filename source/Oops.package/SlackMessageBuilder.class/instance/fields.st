@@ -1,18 +1,16 @@
-building
+private - building
 fields
 
-	| playersAndScoreBlock |
+	| fields |
 
-	playersAndScoreBlock := [ :playersCollection :score | 
-	Dictionary new
-		at: 'title' put: ('<1p> puntos para' expandMacrosWith: score);
-		at: 'value' put: (self playersFrom: playersCollection);
-		at: 'short' put: false;
-		yourself ].
+	fields := OrderedCollection new.
 
-	^ ((roundScore playersWhoScoredPoints
-		groupedBy: [ :player | roundScore scoreOf: player ])
+	self playersGroupedByScore
 		collect: [ :players | 
-			playersAndScoreBlock
-				value: players
-				value: (roundScore scoreOf: players anyOne) ]) values
+			self fieldBuilder
+				value: (roundScore scoreOf: players anyOne)
+				value: players ]
+		into: fields.
+
+	"Need it to get easily a JSON using STON"
+	^ fields asArray

@@ -6,9 +6,10 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"roundScore",
-		"workloads"
+		"separator",
+		"elementFormatter",
+		"lastSeparator"
 	],
-	"name" : "SlackMessageBuilder",
+	"name" : "CollectionFormatter",
 	"type" : "normal"
 }

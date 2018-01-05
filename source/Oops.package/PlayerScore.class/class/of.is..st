@@ -1,4 +1,4 @@
 instance creation
-of: aPlayer with: aScore
+of: aPlayer is: aScore
 		
 	^ self new initializeOf:  aPlayer with: aScore

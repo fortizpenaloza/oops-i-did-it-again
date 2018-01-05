@@ -1,13 +1,13 @@
 slack
-postToSlack: aRoundScore
+postToSlack: aRoundScore using: workloads
 
 	| slackConfiguration |
 
-	slackConfiguration  := configuration slackConfiguration. 
+	slackConfiguration := configuration slackConfiguration.
 
 	slackConfiguration httpClient
 		beOneShot;
-		contents: (SlackMessageBuilder from: aRoundScore) built;
+		contents: (SlackMessageBuilder from: aRoundScore and: workloads) built;
 		contentType: ZnMimeType applicationJson;
 		url: slackConfiguration webhook;
 		post;
