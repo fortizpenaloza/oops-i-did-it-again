@@ -4,7 +4,7 @@ valueFrom: playersCollection
 	| formatter |
 
 	formatter := CollectionFormatter
-		separatingEachWith: $,
+		separatingWith: $,
 		andLastWith: $y
 		applyingToEach: [ :player | 
 			'<1s> (<2s>@<3s><4s>)'
