@@ -9,7 +9,7 @@ testPlayRound
 
 	self
 		should: [ oops round ] raise: Error;
-		assert: oops playersRankings isEmpty;
+		assert: oops currentGame playersRankings isEmpty;
 		should: [ oops previousGame playersRankings ] raise: AssertionFailed.
 
 
@@ -28,7 +28,7 @@ testPlayRound
 
 	self
 		should: [ oops round ] raise: Error;
-		assert: oops playersRankings isEmpty;
+		assert: oops currentGame playersRankings isEmpty;
 		assert: oops previousGame isOver;
 		assert: oops previousGame playersRankings isEmpty.
 
@@ -42,9 +42,9 @@ testPlayRound
 	oops playRound.
 
 	self
-		assert: oops round equals: 1;
-		assert: oops playersRankings size equals: 3;
-		assertCollection: oops playersRankings asArray
+		assert: oops currentGame round equals: 1;
+		assert: oops currentGame playersRankings size equals: 3;
+		assertCollection: oops currentGame playersRankings asArray
 			equals:
 			{(PlayerRanking of: self maximiliano ranked: 1 with: 3).
 			(PlayerRanking of: self francisco ranked: 2 with: 2).
