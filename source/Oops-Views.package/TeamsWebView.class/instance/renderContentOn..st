@@ -7,8 +7,7 @@ renderContentOn: aCanvas
 		forSmallDevices;
 		columnsPerRow: 1;
 		addContent: self headerView;
-		addContent: self gameStatusView;
-		addContent: self tableView;
+		addContent: identifiedTableWithAddButtonView;
 		build.
 
 	aCanvas

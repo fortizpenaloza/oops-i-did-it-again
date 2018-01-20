@@ -10,5 +10,5 @@ slideOutMenu
 		addSubheaderLabeled: 'Configuración';
 		addElement: self playersAnchor;
 		addElement: self teamsConfigurationAnchor;
-		addElement: self robotAnchor;
+		addElement: self gameAnchor;
 		build

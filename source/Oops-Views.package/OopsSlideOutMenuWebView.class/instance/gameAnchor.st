@@ -1,5 +1,5 @@
 accessing
-robotAnchor
+gameAnchor
 
 	| robotConfiguration |
 
@@ -8,7 +8,7 @@ robotAnchor
 		applying: [ :anchor | anchor addClass materialize wavesEffect ].
 
 	robotConfiguration onTrigger
-		evaluate: [ session setContentTo: RobotConfigurationWebView new ];
+		evaluate: [ session setContentTo: GameConfigurationWebView new ];
 		render: session identifiedContentView.
 
 	^ robotConfiguration

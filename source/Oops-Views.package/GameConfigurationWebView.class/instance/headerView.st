@@ -6,7 +6,7 @@ headerView
 			(GenericContainerWebView
 				wrapping:
 					(HeadingWebView
-						displaying: 'Robot'
+						displaying: 'Juego'
 						withLevel: 1
 						applying:
 							[ :heading | heading addClass materialize redText + (heading addClass materialize textLightenBy: 2) ])

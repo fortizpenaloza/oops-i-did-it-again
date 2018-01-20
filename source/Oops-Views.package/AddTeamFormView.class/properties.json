@@ -1,14 +1,17 @@
 {
 	"commentStamp" : "",
 	"super" : "WAPresenter",
-	"category" : "Oops-Views-Rankings",
+	"category" : "Oops-Views-Teams",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"title",
-		"message"
+		"nameField",
+		"slackUserField",
+		"confirmButton",
+		"form",
+		"membersField"
 	],
-	"name" : "PlayersRankingsWebView",
+	"name" : "AddTeamFormView",
 	"type" : "normal"
 }

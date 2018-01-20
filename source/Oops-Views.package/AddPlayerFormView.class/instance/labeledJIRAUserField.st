@@ -3,5 +3,5 @@ labeledJIRAUserField
 
 	^ LabeledWebView
 		displaying: 'Usuario de JIRA'
-		boundTo: jiraUserField
+		boundTo: jiraUserField 
 		applying: [ :label |  ]

@@ -1,4 +1,4 @@
-previous game
+accessing
 previousGame
 
 	^ previousGame content

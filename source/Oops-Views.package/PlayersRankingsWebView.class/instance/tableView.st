@@ -9,5 +9,7 @@ tableView
 		addColumnTitled: 'Puntos' rendering: [ :ranking | ranking score ];
 		build.
 
-	table changeContentsTo: self session oops playersRankings.
+	table changeContentsTo:
+		self currentGame playersRankings.
+		
 	^ table

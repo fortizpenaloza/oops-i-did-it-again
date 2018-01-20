@@ -2,7 +2,8 @@ rendering
 headerView
 
 	^ HeadingWebView
-		displaying: 'Rankings'
+		displaying: title 
 		withLevel: 1
-		applying:
-			[ :heading | heading addClass materialize redText + (heading addClass materialize textLightenBy: 2) ]
+		applying: [ :heading | 
+			heading addClass materialize redText
+				+ (heading addClass materialize textLightenBy: 2) ]

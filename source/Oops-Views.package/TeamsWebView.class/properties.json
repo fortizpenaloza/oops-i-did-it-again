@@ -1,11 +1,13 @@
 {
 	"commentStamp" : "",
 	"super" : "WAPresenter",
-	"category" : "Oops-Views-Robot",
+	"category" : "Oops-Views-Teams",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "RobotConfigurationWebView",
+	"instvars" : [
+		"identifiedTableWithAddButtonView"
+	],
+	"name" : "TeamsWebView",
 	"type" : "normal"
 }

@@ -8,7 +8,7 @@ teamsConfigurationAnchor
 		applying: [ :anchor | anchor addClass materialize wavesEffect ].
 		
 	teamsConfiguration onTrigger
-		evaluate: [ session setContentTo: PlayersWebView new ];
+		evaluate: [ session setContentTo: TeamsWebView new ];
 		render: session identifiedContentView.
 
 	^ teamsConfiguration

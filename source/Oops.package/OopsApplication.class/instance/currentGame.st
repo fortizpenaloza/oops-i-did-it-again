@@ -1,0 +1,4 @@
+accessing
+currentGame
+
+	^ currentGame 
