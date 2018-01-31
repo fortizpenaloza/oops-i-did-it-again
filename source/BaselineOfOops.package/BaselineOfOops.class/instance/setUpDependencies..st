@@ -32,7 +32,7 @@ setUpDependencies: spec
 				repository: 'http://smalltalkhub.com/mc/zeroflag/Teapot/main/' ].
 
 	spec
-		configuration: 'PolyMath';
+		configuration: 'PolyMath'
 		with: [ spec
 				repository: 'http://smalltalkhub.com/mc/PolyMath/PolyMath/main';
 				version: '0.95';
