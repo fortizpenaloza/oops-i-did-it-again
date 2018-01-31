@@ -7,13 +7,8 @@ playRound
 
 	self
 		saveAfter: [ currentGame proceedToNextRoundAccordingTo: workloads.
-
 			roundScores := currentGame lastRoundScores.
-
 			currentGame isOver
-				ifTrue: [ previousGame := Binding to: currentGame.
-					currentGame := Game
-						involving: self players
-						during: configuration numberOfRounds ] ].
+				ifTrue: [ self startNewGame ] ].
 
 	self postToSlack: roundScores using: workloads

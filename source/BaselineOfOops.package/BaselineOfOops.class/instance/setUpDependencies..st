@@ -36,4 +36,4 @@ setUpDependencies: spec
 		with: [ spec
 				repository: 'http://smalltalkhub.com/mc/PolyMath/PolyMath/main';
 				version: '0.95';
-				load: 'Math-Random' ]
+				loads: 'Math-Random' ]

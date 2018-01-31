@@ -3,12 +3,11 @@ startUpApplicationContextFor: aWillowApplication
 
 	super startUpApplicationContextFor: aWillowApplication.
 
-	contentView := [ :canvas | 
-	canvas
-		render:
+	contentView := 
 			(PlayersRankingsWebView
-				entitled: 'Ranking'
-				obtainingRankingBySending: #currentGame) ].
+				titled: 'Ranking'
+				obtainingGameFrom: [ self oops currentGame ]).
+				
 	identifiedContentView := IdentifiedWebView
 		forMainNamed: 'content'
 		containing: [ :canvas | canvas render: contentView ]

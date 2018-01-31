@@ -1,0 +1,4 @@
+accessing
+game
+
+	^ gameProvider value

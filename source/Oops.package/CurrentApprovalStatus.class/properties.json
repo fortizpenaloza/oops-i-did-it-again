@@ -6,10 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"user",
-		"secondsElapsedUntilToday",
-		"registeredWorkSeconds"
+		"configuration",
+		"player"
 	],
-	"name" : "CurrentMonthWorkload",
+	"name" : "CurrentApprovalStatus",
 	"type" : "normal"
 }

@@ -9,8 +9,8 @@ rankingsAnchor
 
 	rankingsAnchor onTrigger
 		evaluate: [ session setContentTo: (PlayersRankingsWebView
-				entitled: 'Ranking'
-				obtainingRankingBySending: #currentGame) ];
+				titled: 'Ranking'
+				obtainingGameFrom: [ self session oops currentGame ]) ];
 		render: session identifiedContentView.
 		
 	^ rankingsAnchor

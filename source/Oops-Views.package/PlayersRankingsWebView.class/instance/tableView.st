@@ -10,6 +10,6 @@ tableView
 		build.
 
 	table changeContentsTo:
-		self currentGame playersRankings.
+		self game playersRankings.
 		
 	^ table

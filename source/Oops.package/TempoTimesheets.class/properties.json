@@ -1,15 +1,19 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "Oops-JIRATempo",
+	"category" : "Oops-Tempo",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
 		"username",
 		"password",
-		"httpClient"
+		"httpClient",
+		"url",
+		"endpointBinding",
+		"pathSegments",
+		"queryStringFields"
 	],
-	"name" : "JIRATempoConfiguration",
+	"name" : "TempoTimesheets",
 	"type" : "normal"
 }

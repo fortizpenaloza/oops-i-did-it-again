@@ -1,14 +1,14 @@
 {
 	"commentStamp" : "",
 	"super" : "TestCase",
-	"category" : "Oops-Tests-JIRATempo",
+	"category" : "Oops-Tests-Tempo",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
 		"httpClient",
-		"jiraTempo"
+		"tempoTimesheets"
 	],
-	"name" : "JIRATempoTest",
+	"name" : "CurrentApprovalStatusTest",
 	"type" : "normal"
 }
