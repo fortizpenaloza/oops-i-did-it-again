@@ -8,6 +8,12 @@ setUpDependencies: spec
 				loads: #('Deployment') ].
 
 	spec
+		baseline: 'RESTSt'
+		with: [ spec
+				repository: 'github://ba-st/RESTSt:master/source';
+				loads: #('Deployment') ].
+
+	spec
 		baseline: 'Chalten'
 		with: [ spec
 				repository: 'github://ba-st/chalten:v6.0.0/repository';

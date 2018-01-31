@@ -5,9 +5,10 @@ testCurrentWorkload
 
 	httpClient
 		addExpectedResponse: (ZnResponse ok: (ZnEntity json: self franciscoWorkloadJSON)).
-	response := (CurrentApprovalStatus for: self francisco)
-		performOn: tempoTimesheets.
 		
+	response := (CurrentApprovalStatus for: self francisco jiraUser)
+		performOn: tempoTimesheets .
+				
 	currentMonthWorkload := CurrentMonthWorkloadParser new parseOf: self francisco from: response.
 	
 	self

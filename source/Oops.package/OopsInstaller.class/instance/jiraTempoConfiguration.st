@@ -9,7 +9,7 @@ jiraTempoConfiguration
 		do: [ :signal | signal halt ].
 
 
-	^ TempoTimesheets
+	^ RESTClient
 		locatedAt: (configuration at: 'baseURL')
 		username: (configuration at: 'username')
 		password: (configuration at: 'password')

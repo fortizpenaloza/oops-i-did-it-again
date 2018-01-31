@@ -1,11 +1,4 @@
 initialize-release
-initializeFor: aPlayer
+initializeFor: aUsername
 	
-	player := aPlayer
-	
-	"
-periodStartDate - string 
-first day of the period. Defaults to today.
-
-username - string 
-username"
+	jiraUsername := aUsername

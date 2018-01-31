@@ -6,8 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"configuration",
-		"player"
+		"jiraUsername"
 	],
 	"name" : "CurrentApprovalStatus",
 	"type" : "normal"

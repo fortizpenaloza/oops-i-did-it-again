@@ -1,5 +1,4 @@
 jira tempo
 jiraTempo
 
-	^ CurrentApprovalStatus
-		configuredBy: configuration jiraTempoConfiguration
+	^ configuration jiraTempoConfiguration

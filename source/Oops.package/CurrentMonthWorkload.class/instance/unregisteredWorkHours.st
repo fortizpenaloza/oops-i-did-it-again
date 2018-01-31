@@ -2,4 +2,4 @@ accessing
 unregisteredWorkHours
 
 	^ secondsElapsedUntilToday - registeredWorkSeconds
-		- self todaySeconds convertTo: TimeUnits hour
+		- self todayTime convertTo: self hour

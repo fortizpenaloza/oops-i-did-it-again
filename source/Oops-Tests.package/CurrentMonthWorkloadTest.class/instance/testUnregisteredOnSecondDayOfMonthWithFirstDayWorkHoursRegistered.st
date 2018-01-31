@@ -12,4 +12,4 @@ testUnregisteredOnSecondDayOfMonthWithFirstDayWorkHoursRegistered
 		assert: currentMonthWorkload user 
 		equals: self francisco;
 		assert: currentMonthWorkload unregisteredWorkHours
-			equals: (TimeUnits hour with: 0)
+			equals: (TimeUnits hour nullMeasure)

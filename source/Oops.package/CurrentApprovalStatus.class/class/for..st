@@ -1,4 +1,4 @@
 instance creation
-for: aPlayer 
+for: aUsername 
 
-	^ self new initializeFor: aPlayer 
+	^ self new initializeFor: aUsername 

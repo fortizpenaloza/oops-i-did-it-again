@@ -1,12 +1,11 @@
 as yet unclassified 
-performOn: aTempoTimesheets
+performOn: aRESTClient
 
 	| response |
 
-	response := aTempoTimesheets 
-		setEndpointTo: 'timesheet-approval';
-		addPathSegment: 'current';
-		addQueryFieldNamed: 'username' pairedTo: player jiraUser;
+	response := aRESTClient 
+		setResourceTo: 'timesheet-approval/current';
+		addQueryFieldNamed: 'username' pairedTo: jiraUsername;
 		get.
 
 	^response 
