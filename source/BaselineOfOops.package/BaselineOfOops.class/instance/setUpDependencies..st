@@ -10,9 +10,8 @@ setUpDependencies: spec
 	spec
 		baseline: 'RESTSt'
 		with: [ spec
-				repository: 'github://ba-st/RESTSt:master/source';
+				repository: 'github://fortizpenaloza/Nap:master/source';
 				loads: #('Deployment') ].
-
 	spec
 		baseline: 'Chalten'
 		with: [ spec
