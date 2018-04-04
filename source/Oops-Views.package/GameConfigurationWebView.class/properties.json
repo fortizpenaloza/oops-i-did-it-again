@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "WAPresenter",
+	"super" : "WAPainter",
 	"category" : "Oops-Views-Robot",
 	"classinstvars" : [ ],
 	"pools" : [ ],

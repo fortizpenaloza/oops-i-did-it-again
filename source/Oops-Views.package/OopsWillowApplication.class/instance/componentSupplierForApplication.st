@@ -1,4 +1,4 @@
 Accessing
-componentSupplier
+componentSupplierForApplication
 
 	^ MaterializeComponentSupplier online 
