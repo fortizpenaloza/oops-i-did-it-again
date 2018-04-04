@@ -4,7 +4,7 @@ teamsConfigurationAnchor
 	| teamsConfiguration |
 
 	teamsConfiguration := self componentSupplier
-		asynchronicAnchorLabeled: 'Equipos'
+		asynchronicLinkActingAsButtonLabeled: 'Equipos'
 		applying: [ :anchor | anchor addClass materialize wavesEffect ].
 		
 	teamsConfiguration onTrigger

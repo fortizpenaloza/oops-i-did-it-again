@@ -4,7 +4,7 @@ playersAnchor
 	| playersConfiguration |
 
 	playersConfiguration := self componentSupplier
-		asynchronicAnchorLabeled: 'Jugadores'
+		asynchronicLinkActingAsButtonLabeled: 'Jugadores'
 		applying: [ :anchor | anchor addClass materialize wavesEffect ].
 		
 	playersConfiguration onTrigger

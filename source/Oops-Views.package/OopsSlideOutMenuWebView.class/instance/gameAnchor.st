@@ -4,7 +4,7 @@ gameAnchor
 	| robotConfiguration |
 
 	robotConfiguration := self componentSupplier
-		asynchronicAnchorLabeled: 'Juego'
+		asynchronicLinkActingAsButtonLabeled: 'Juego'
 		applying: [ :anchor | anchor addClass materialize wavesEffect ].
 
 	robotConfiguration onTrigger

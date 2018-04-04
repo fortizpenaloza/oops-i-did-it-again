@@ -12,7 +12,7 @@ renderContentOn: aCanvas
 					(GenericContainerWebView
 						obtainingContentFrom:
 							(self componentSupplier
-								asynchronicAnchorLabeled: [ :canvas | 
+								asynchronicLinkActingAsButtonLabeled: [ :canvas | 
 									canvas icon
 										class: 'material-icons';
 										with: 'menu' ]
