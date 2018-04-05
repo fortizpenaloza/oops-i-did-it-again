@@ -6,8 +6,8 @@ startUpApplicationContextFor: aWillowApplication
 	contentView := 
 			(PlayersRankingsWebView
 				titled: 'Ranking'
-				obtainingGameFrom: [ self oops currentGame ]).
+				obtainingGameFrom: self oops currentGame).
 				
 	identifiedContentView := IdentifiedWebView
 		forMainNamed: 'content'
-		containing: [ :canvas | canvas render: contentView ]
+		containing: [:canvas | canvas render: contentView ]

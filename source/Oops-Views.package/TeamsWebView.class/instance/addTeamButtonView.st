@@ -4,7 +4,7 @@ addTeamButtonView
 	| addPlayerButtonView |
 
 	addPlayerButtonView := self componentSupplier
-		asynchronicAnchorLabeled: [ :canvas | 
+		asynchronicLinkActingAsButtonLabeled: [ :canvas | 
 			canvas icon
 				class: 'material-icons';
 				with: 'add' ]

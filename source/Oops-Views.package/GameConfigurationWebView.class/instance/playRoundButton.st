@@ -4,11 +4,10 @@ playRoundButton
 	| playRoundButton |
 
 	playRoundButton := self componentSupplier
-		asynchronicAnchorLabeled: 'Forzar una ronda'
+		asynchronicLinkActingAsButtonLabeled: 'Forzar una ronda'
 		applying: [ :anchor | 
 			anchor addClass materialize wavesEffect
-				+ anchor addClass materialize wavesLight
-				+ anchor addClass materialize button ].
+				+ anchor addClass materialize wavesLight ].
 
 	playRoundButton onTrigger evaluate: [ self session oops playRound ].
 	^ playRoundButton

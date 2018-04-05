@@ -10,6 +10,10 @@ jiraTempoConfiguration
 
 
 	^ RESTClient
-		locatedAt: (configuration at: 'baseURL')
-		username: (configuration at: 'username')
-		password: (configuration at: 'password')
+		configuredBy:
+			(RESTClientConfiguration
+				using: ZnClient new
+				againstServiceOn: (configuration at: #baseURL)
+				applying:
+					{(BasicAuthentication with: (configuration at: #username) password: (configuration at: #password)).
+					(SetMIMEType to: ZnMimeType applicationJson)})

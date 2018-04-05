@@ -8,4 +8,4 @@ initializeSavingItselfToFileNamed: aFileName configuredBy: anOopsConfiguration
 	players := Set new.
 
 	currentGame := Game involving: self players during: 1.
-	previousGame := Binding undefinedExplainedBy: 'A game is not over yet'
+	previousGame := Binding undefinedExplainedBy: 'A game is not over yet' raising: GameError

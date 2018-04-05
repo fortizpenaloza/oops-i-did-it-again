@@ -1,4 +1,4 @@
 accessing
 round
 	
-	^ Error signal: 'Game not started, rount not available'
+	^ GameError signal: 'Game not started, rount not available'
