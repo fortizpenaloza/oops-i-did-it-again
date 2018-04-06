@@ -7,10 +7,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"nameField",
-		"slackUserField",
-		"confirmButton",
-		"form",
-		"membersField"
+		"membersField",
+		"form"
 	],
 	"name" : "AddTeamFormView",
 	"type" : "normal"

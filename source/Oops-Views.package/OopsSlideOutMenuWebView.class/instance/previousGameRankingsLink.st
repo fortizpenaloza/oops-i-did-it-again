@@ -1,5 +1,5 @@
-accessing
-previousGameRankingsAnchor
+private-rendering
+previousGameRankingsLink
 
 	| rankingsAnchor |
 
@@ -8,11 +8,7 @@ previousGameRankingsAnchor
 		applying: [ :anchor | anchor addClass materialize wavesEffect ].
 
 	rankingsAnchor onTrigger
-		evaluate: [ session
-				setContentTo:
-					(PlayersRankingsWebView
-						titled: 'Ranking anterior'
-						obtainingGameFrom: self session oops previousGame) ];
+		evaluate: [ session setContentTo: self previousGamePlayersRankingsView ];
 		render: session identifiedContentView.
 
 	^ rankingsAnchor

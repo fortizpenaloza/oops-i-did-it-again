@@ -7,7 +7,7 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"title",
-		"gameProvider"
+		"game"
 	],
 	"name" : "PlayersRankingsWebView",
 	"type" : "normal"

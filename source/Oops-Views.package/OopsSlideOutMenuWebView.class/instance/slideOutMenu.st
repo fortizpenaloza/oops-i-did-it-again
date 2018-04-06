@@ -1,14 +1,14 @@
-accessing
+private-rendering
 slideOutMenu
 
 	^ self componentSupplier slideOutMenuBuilder
 		beFixed;
 		addSubheaderLabeled: 'Oops i did it again!';
-		addElement: self rankingsAnchor;
-		addElement: self previousGameRankingsAnchor;
+		addElement: self currentRankingsLink;
+		addElement: self previousGameRankingsLink;
 		addDivider;
 		addSubheaderLabeled: 'Configuración';
-		addElement: self playersAnchor;
+		addElement: self playersLink;
 		addElement: self teamsConfigurationAnchor;
-		addElement: self gameAnchor;
+		addElement: self gameConfigurationLink;
 		build

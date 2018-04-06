@@ -1,4 +1,4 @@
-rendering
+private-rendering
 tableView
 
 	| table |
@@ -9,7 +9,6 @@ tableView
 		addColumnTitled: 'Puntos' rendering: [ :ranking | ranking score ];
 		build.
 
-	table changeContentsTo:
-		self game playersRankings.
-		
+	table changeContentsTo: game playersRankings.
+
 	^ table

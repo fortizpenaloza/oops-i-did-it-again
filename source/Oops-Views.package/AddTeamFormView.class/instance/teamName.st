@@ -1,0 +1,4 @@
+accessing
+teamName
+	
+	^ nameField contents

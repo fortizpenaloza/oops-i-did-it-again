@@ -1,5 +1,5 @@
-accessing
-gameAnchor
+private-rendering
+gameConfigurationLink
 
 	| robotConfiguration |
 

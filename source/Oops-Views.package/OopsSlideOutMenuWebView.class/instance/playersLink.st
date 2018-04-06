@@ -1,5 +1,5 @@
-accessing
-playersAnchor
+private-rendering
+playersLink
 
 	| playersConfiguration |
 

@@ -1,4 +1,0 @@
-accessing
-game
-
-	^ gameProvider value

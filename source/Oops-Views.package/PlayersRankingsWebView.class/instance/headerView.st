@@ -1,4 +1,4 @@
-rendering
+private-rendering
 headerView
 
 	^ HeadingWebView

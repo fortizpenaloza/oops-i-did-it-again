@@ -6,7 +6,7 @@ startUpApplicationContextFor: aWillowApplication
 	contentView := 
 			(PlayersRankingsWebView
 				titled: 'Ranking'
-				obtainingGameFrom: self oops currentGame).
+				of: self oops currentGame).
 				
 	identifiedContentView := IdentifiedWebView
 		forMainNamed: 'content'

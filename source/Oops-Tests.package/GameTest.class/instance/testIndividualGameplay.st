@@ -1,5 +1,5 @@
 tests
-testPlayGame
+testIndividualGameplay
 
 	| game |
 
