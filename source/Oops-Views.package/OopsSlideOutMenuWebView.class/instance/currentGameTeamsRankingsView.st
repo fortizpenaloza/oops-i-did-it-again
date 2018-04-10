@@ -1,7 +1,7 @@
 private-rendering
 currentGameTeamsRankingsView
 
-	^ PlayersRankingsWebView
-		titled: 'Rankings por equipo'
+	^ PlayerRankingsWebView
+		titled: 'Posiciones por equipo'
 		of:
 			self oops currentTeamGame

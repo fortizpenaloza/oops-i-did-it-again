@@ -11,6 +11,7 @@ addPlayerModalView
 		build.
 
 	modalView onTrigger
+		closeAllDialogs;
 		serializeForm: addPlayerFormView;
 		evaluate: [ [ self oops addPlayer: addPlayerFormView player ]
 				on: InstanceCreationFailed

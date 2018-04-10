@@ -1,4 +1,4 @@
-private-rendering
+accessing
 oops
 
-	^ self session oops
+	^ session oops

@@ -9,6 +9,6 @@
 		"title",
 		"game"
 	],
-	"name" : "PlayersRankingsWebView",
+	"name" : "PlayerRankingsWebView",
 	"type" : "normal"
 }

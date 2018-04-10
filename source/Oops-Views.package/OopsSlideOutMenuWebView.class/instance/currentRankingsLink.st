@@ -4,8 +4,8 @@ currentRankingsLink
 	| link |
 
 	link := self componentSupplier
-		asynchronicLinkLabeled: [ :canvas | canvas render: 'Actual' ]
-		applying: [ :link | link addClass materialize wavesEffect ].
+		asynchronicLinkLabeled: 'Actual'
+		applying: [ :theLink | theLink addClass materialize wavesEffect ].
 
 	link onTrigger
 		evaluate: [ session setContentTo: self currentGamePlayersRankingsView ];

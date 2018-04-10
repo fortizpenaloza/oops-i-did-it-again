@@ -4,7 +4,7 @@ previousGameTeamsRankingsLink
 	| link |
 
 	link := self componentSupplier
-		asynchronicLinkLabeled: [ :canvas | canvas render: 'Anterior' ]
+		asynchronicLinkLabeled: 'Anterior' 
 		applying: [ :theLink | theLink addClass materialize wavesEffect ].
 
 	link onTrigger

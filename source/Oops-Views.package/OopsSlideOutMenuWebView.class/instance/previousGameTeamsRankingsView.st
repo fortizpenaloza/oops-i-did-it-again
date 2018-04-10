@@ -1,8 +1,8 @@
 private-rendering
 previousGameTeamsRankingsView
 
-	^ [ PlayersRankingsWebView
-		titled: 'Rankings última partida'
+	^ [ PlayerRankingsWebView
+		titled: 'Posiciones último juego por equipos'
 		of:
 			self oops previousTeamGame ]
 		on: GameError

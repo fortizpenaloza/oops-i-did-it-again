@@ -4,7 +4,7 @@ currentTeamsRankingsLink
 	| link |
 
 	link := self componentSupplier
-		asynchronicLinkLabeled: [ :canvas | canvas render: 'Actual' ]
+		asynchronicLinkLabeled: 'Actual'
 		applying: [ :theLink | theLink addClass materialize wavesEffect ].
 
 	link onTrigger

@@ -5,11 +5,11 @@ slideOutMenu
 		beFixed;
 		addSubheaderLabeled: 'Oops i did it again!';
 		addDivider;
-		addSubheaderLabeled: 'Rankings individuales';
+		addSubheaderLabeled: 'Posiciones individuales';
 		addElement: self currentRankingsLink;
 		addElement: self previousGameRankingsLink;
 		addDivider;
-		addSubheaderLabeled: 'Rankings por equipos';
+		addSubheaderLabeled: 'Posiciones por equipos';
 		addElement: self currentTeamsRankingsLink;
 		addElement: self previousGameTeamsRankingsLink;		
 		addDivider;

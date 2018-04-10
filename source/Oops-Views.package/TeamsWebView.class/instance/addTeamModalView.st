@@ -11,16 +11,15 @@ addTeamModalView
 		build.
 
 	modalView onTrigger
+		closeAllDialogs;
 		serializeForm: addTeamFormView;
 		evaluate: [ :playersName | 
-			[ self addTeamNamed: addTeamFormView teamName consistingOf: playersName ]
+			[ self
+				addTeamNamed: addTeamFormView teamName
+				consistingOf: playersName ]
 				on: InstanceCreationFailed
 				do: [ :signal |  ] ]
-			with:
-			(JSStream new
-					nextPutAll:
-						'$("div.chips").find("div.chip").toArray().map(function(chip) { return chip.firstChild.textContent; })';
-					yourself);
+			with: self jQueryChipsContentQuery;
 		render: identifiedTableWithAddButtonView.
-
+		
 	^ modalView

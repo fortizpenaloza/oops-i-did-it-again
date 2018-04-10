@@ -1,6 +1,6 @@
 Controlling
 currentGamePlayersRankingsView
 
-	^ PlayersRankingsWebView
-		titled: 'Rankings individuales'
+	^ PlayerRankingsWebView
+		titled: 'Posiciones individuales'
 		of: self oops currentGame
