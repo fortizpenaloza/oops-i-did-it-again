@@ -1,4 +1,4 @@
 private - rankings
 playersRankingsWhenEnded
 
-	^ (PlayersRankingsBuilder for: self players with: roundScores) built.
+	^ (PlayersRankingsBuilder for: self players with: roundScores) build.

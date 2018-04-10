@@ -12,5 +12,4 @@ fields
 				value: players ]
 		into: fields.
 
-	"Need it to get easily a JSON using STON"
 	^ fields asArray

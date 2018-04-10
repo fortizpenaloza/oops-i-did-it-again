@@ -1,0 +1,4 @@
+initialization
+hash
+
+	^ name hash

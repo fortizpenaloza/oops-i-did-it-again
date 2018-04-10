@@ -1,4 +1,4 @@
 comparing
 hash
 
-	^ name hash
+	^ jiraUser hash

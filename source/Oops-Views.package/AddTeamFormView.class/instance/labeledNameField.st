@@ -1,4 +1,4 @@
 private-accessing
 labeledNameField
 
-	^ LabeledWebView displaying: 'Nombre' boundTo: nameField applying: [ :label |  ]
+	^ LabeledWebView displaying: 'Nombre' boundTo: nameField applying: []

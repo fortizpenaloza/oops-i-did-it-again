@@ -8,9 +8,9 @@ testPlayRound
 		configuredBy: self oopsConfiguration.
 
 	self
-		should: [ oops round ] raise: Error;
+		should: [ oops currentGame round ] raise: GameError;
 		assert: oops currentGame playersRankings isEmpty;
-		should: [ oops previousGame playersRankings ] raise: AssertionFailed.
+		should: [ oops previousGame playersRankings ] raise: GameError.
 
 
 	oops addPlayer: self francisco.
@@ -45,7 +45,7 @@ testPlayRound
 		assert: oops currentGame round equals: 1;
 		assert: oops currentGame playersRankings size equals: 3;
 		assertCollection: oops currentGame playersRankings asArray
-			equals:
-			{(PlayerRanking of: self maximiliano ranked: 1 with: 3).
-			(PlayerRanking of: self francisco ranked: 2 with: 2).
+			hasSameElements:
+			{(PlayerRanking of: self francisco ranked: 1 with: 3).
+			(PlayerRanking of: self maximiliano ranked: 2 with: 2).
 			(PlayerRanking of: self gabriel ranked: 3 with: 2)}

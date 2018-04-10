@@ -1,0 +1,4 @@
+accessing
+previousTeamGame
+
+	^ previousTeamGame content

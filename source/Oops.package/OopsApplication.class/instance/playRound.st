@@ -1,14 +1,9 @@
 round management
 playRound
 
-	| workloads roundScores |
+	| workloads |
 
 	workloads := self workloads.
 
-	self
-		saveAfter: [ currentGame proceedToNextRoundAccordingTo: workloads.
-			roundScores := currentGame lastRoundScores.
-			currentGame isOver
-				ifTrue: [ self startNewGame ] ].
-
-	self postToSlack: roundScores using: workloads
+	self playIndividualGameRoundAccordingTo: workloads.
+	self playTeamGameRoundAccordingTo: (self teamWorkloadsFrom: workloads)

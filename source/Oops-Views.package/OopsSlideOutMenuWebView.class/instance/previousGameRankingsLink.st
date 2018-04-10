@@ -1,14 +1,14 @@
-private-rendering
+accessing links
 previousGameRankingsLink
 
-	| rankingsAnchor |
+	| link |
 
-	rankingsAnchor := self componentSupplier
-		asynchronicLinkLabeled: [ :canvas | canvas render: 'Ranking anterior' ]
-		applying: [ :anchor | anchor addClass materialize wavesEffect ].
+	link := self componentSupplier
+		asynchronicLinkLabeled: [ :canvas | canvas render: 'Anterior' ]
+		applying: [ :theLink | theLink addClass materialize wavesEffect ].
 
-	rankingsAnchor onTrigger
+	link onTrigger
 		evaluate: [ session setContentTo: self previousGamePlayersRankingsView ];
 		render: session identifiedContentView.
 
-	^ rankingsAnchor
+	^ link

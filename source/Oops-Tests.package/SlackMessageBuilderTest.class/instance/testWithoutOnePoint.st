@@ -26,7 +26,7 @@ testWithoutOnePoint
 				of: (TimeUnits second nullMeasure))}.
 
 	self
-		assert: builder built
+		assert: builder build
 		equals:
 			'{
 	"attachments" : [

@@ -1,14 +1,14 @@
-private-rendering
+accessing links
 gameConfigurationLink
 
-	| robotConfiguration |
+	| link |
 
-	robotConfiguration := self componentSupplier
+	link := self componentSupplier
 		asynchronicLinkLabeled: 'Juego'
-		applying: [ :anchor | anchor addClass materialize wavesEffect ].
+		applying: [ :theLink | theLink addClass materialize wavesEffect ].
 
-	robotConfiguration onTrigger
+	link onTrigger
 		evaluate: [ session setContentTo: GameConfigurationWebView new ];
 		render: session identifiedContentView.
 
-	^ robotConfiguration
+	^ link

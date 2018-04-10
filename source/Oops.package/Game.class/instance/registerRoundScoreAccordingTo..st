@@ -1,4 +1,6 @@
 private - round management
 registerRoundScoreAccordingTo: workloads
 
-	roundScores add: (RoundScoreBuilder for: self round from: workloads) built.
+	roundScores
+		add:
+			(RoundScoreBuilder for: players on: self round from: workloads) build

@@ -7,10 +7,8 @@ valueFrom: playersCollection
 		separatingWith: $,
 		andLastWith: $y
 		applyingToEach: [ :player | 
-			'<1s> (<2s>@<3s><4s>)'
+			'<1s> (<2s>)'
 				expandMacrosWith: player name
-				with: '<'
-				with: player slackUser
-				with: '>' ].
+				with: (self slackUserOf: player) ].
 
 	^ formatter format: playersCollection

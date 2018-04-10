@@ -1,5 +1,5 @@
 building
-built
+build
 
 	^ self playersScoresSortedByScoreInDescendingOrder
 		collectWithIndex:

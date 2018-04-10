@@ -9,6 +9,7 @@ tableView
 		addColumnTitled: 'Slack' rendering: [ :player | player slackUser ];
 		build.
 
-	tableView changeContentsTo: self session oops players.
+	tableView changeContentsTo:
+		self oops players.
 
 	^ tableView

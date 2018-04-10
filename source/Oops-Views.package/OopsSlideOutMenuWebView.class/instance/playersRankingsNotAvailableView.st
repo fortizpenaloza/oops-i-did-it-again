@@ -6,7 +6,7 @@ playersRankingsNotAvailableView
 			canvas
 				render:
 					(HeadingWebView
-						displaying: 'Ranking anterior'
+						displaying: 'Rankings último juego'
 						withLevel: 1
 						applying: [ :heading | 
 							heading addClass materialize redText

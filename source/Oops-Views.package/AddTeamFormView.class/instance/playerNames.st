@@ -1,7 +1,7 @@
-initialize-release
+accessing
 playerNames
 
-	^ self session oops players
+	^ self oops players
 		inject: Dictionary new
 		into: [ :dictionary :player | 
 			dictionary

@@ -3,10 +3,10 @@ testBuildingUsingWorkloadsOnTheEigthDayOfTheMonth
 
 	| roundScore |
 
-	roundScore := 
-		(RoundScoreBuilder 
-			for: self round 
-			from: self workloadsOnTheEigthDayOfTheMonth) built.
+	roundScore := (RoundScoreBuilder
+		for: self players
+		on: self round
+		from: self workloadsOnTheEigthDayOfTheMonth) build.
 
 	self
 		assert: roundScore round equals: self round;

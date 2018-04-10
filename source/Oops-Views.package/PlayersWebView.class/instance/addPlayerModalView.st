@@ -12,7 +12,7 @@ addPlayerModalView
 
 	modalView onTrigger
 		serializeForm: addPlayerFormView;
-		evaluate: [ [ self session oops addPlayer: addPlayerFormView player ]
+		evaluate: [ [ self oops addPlayer: addPlayerFormView player ]
 				on: InstanceCreationFailed
 				do: [ :signal | signal ] ];
 		render: identifiedTableWithAddButtonView.

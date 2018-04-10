@@ -11,7 +11,9 @@
 		"teams",
 		"players",
 		"currentGame",
-		"previousGame"
+		"previousGame",
+		"currentTeamGame",
+		"previousTeamGame"
 	],
 	"name" : "OopsApplication",
 	"type" : "normal"
