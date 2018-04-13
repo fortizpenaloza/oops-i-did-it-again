@@ -1,4 +1,4 @@
-installation
+installing
 serializationFileName
 
 	^ 'oops.fuel'

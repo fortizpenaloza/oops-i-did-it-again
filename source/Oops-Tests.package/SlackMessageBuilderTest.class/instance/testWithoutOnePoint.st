@@ -10,7 +10,8 @@ testWithoutOnePoint
 				withAll:
 					{(PlayerScore of: self maximiliano is: 3).
 					(PlayerScore of: self francisco is: 2).
-					(PlayerScore of: self gabriel is: 2)})
+					(PlayerScore of: self nicolas is: 2).
+					(PlayerScore of: self gabriel is: 1)})
 		and:
 			{(CurrentMonthWorkload
 				for: self maximiliano
@@ -21,8 +22,12 @@ testWithoutOnePoint
 				with: (TimeUnits second with: 57600)
 				of: (TimeUnits second nullMeasure )).
 			(CurrentMonthWorkload
-				for: self gabriel
+				for: self nicolas
 				with: (TimeUnits second with: 57600)
+				of: (TimeUnits second nullMeasure )).				
+			(CurrentMonthWorkload
+				for: self gabriel
+				with: (TimeUnits second with: 56000)
 				of: (TimeUnits second nullMeasure))}.
 
 	self
@@ -33,13 +38,18 @@ testWithoutOnePoint
 		{
 			"fields" : [
 				{
-					"title" : "3 puntos por tener 16 hours sin registrar para",
+					"title" : "3 puntos por tener 16 horas sin registrar para",
 					"value" : "Maximiliano Tabacman (<@m.tabacman>)",
 					"short" : false
 				},
 				{
-					"title" : "2 puntos por tener 8 hours sin registrar para",
-					"value" : "Francisco Ortiz Peñaloza (<@f.ortiz>) y Gabriel Cotelli (<@g.cotelli>)",
+					"title" : "2 puntos por tener 8 horas sin registrar para",
+					"value" : "Francisco Ortiz Peñaloza (<@f.ortiz>) y Nicolás Chillo (<@n.chillo>)",
+					"short" : false
+				},
+				{
+					"title" : "1 puntos por tener 7 horas y 33 minutos sin registrar para",
+					"value" : "Gabriel Cotelli (<@g.cotelli>)",
 					"short" : false
 				}
 			],

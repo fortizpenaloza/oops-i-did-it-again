@@ -47,5 +47,5 @@ testPlayRound
 		assertCollection: oops currentGame playersRankings asArray
 			hasSameElements:
 			{(PlayerRanking of: self francisco ranked: 1 with: 3).
-			(PlayerRanking of: self maximiliano ranked: 2 with: 2).
-			(PlayerRanking of: self gabriel ranked: 3 with: 2)}
+			(PlayerRanking of: self gabriel ranked: 2 with: 2).
+			(PlayerRanking of: self maximiliano ranked: 3 with: 2)}

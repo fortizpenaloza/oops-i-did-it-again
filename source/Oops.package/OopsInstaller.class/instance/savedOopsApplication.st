@@ -1,0 +1,4 @@
+private-accessing
+savedOopsApplication
+
+	^ FLMaterializer materializeFromFileNamed: self serializationFileName

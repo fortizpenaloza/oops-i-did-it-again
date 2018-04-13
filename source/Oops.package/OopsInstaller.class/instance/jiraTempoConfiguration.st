@@ -1,19 +1,17 @@
-installation
+installing
 jiraTempoConfiguration
 
-	| configuration |
+	| jiraConfiguration |
+	
+	jiraConfiguration := configuration at: #jira_tempo.
 
-	[ FileSystem workingDirectory / self jiraTempoConfigurationFileName
-		readStreamDo: [ :stream | configuration := STONJSON fromStream: stream ] ]
-		on: FileSystemError
-		do: [ :signal | signal halt ].
-
-
-	^ RESTClient
+	^ Nap
 		configuredBy:
-			(RESTClientConfiguration
+			(NapConfiguration
 				using: ZnClient new
-				againstServiceOn: (configuration at: #baseURL)
+				againstServiceOn: (jiraConfiguration at: #baseURL)
 				applying:
-					{(BasicAuthentication with: (configuration at: #username) password: (configuration at: #password)).
+					{(BasicAuthentication
+						with: (jiraConfiguration at: #username)
+						password: (jiraConfiguration at: #password)).
 					(SetMIMEType to: ZnMimeType applicationJson)})

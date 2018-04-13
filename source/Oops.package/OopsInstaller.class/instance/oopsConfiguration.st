@@ -1,4 +1,4 @@
-installation
+private-accessing
 oopsConfiguration
 
 	^ OopsConfiguration
