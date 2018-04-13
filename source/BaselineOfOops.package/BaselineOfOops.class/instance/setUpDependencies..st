@@ -23,7 +23,7 @@ setUpDependencies: spec
 		baseline: 'WillowMaterialize'
 		with: [ spec
 				repository: 'github://fortizpenaloza/Willow-Materialize:master/source';
-				loads: #('Development') ].
+				loads: #('Deployment') ].
 
 	spec
 		baseline: 'TestHTTPClient'
